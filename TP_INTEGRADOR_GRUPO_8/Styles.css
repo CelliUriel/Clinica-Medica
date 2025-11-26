@@ -1,0 +1,223 @@
+﻿/* =======================================
+   🏥 1. VARIABLES GLOBALES
+   ======================================= */
+:root {
+    --primary-color: #0077b6; /* Azul clínico */
+    --primary-dark: #023e8a; /* Azul profundo */
+    --accent-color: #00b4d8; /* Celeste brillante */
+    --background-light: #f5f7fa; /* Fondo claro */
+    --card-background: #ffffff; /* Fondo de las tarjetas */
+    --border-color: #e1e5ee;
+    --text-dark: #222;
+    --text-muted: #666;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+/* =======================================
+   🌿 2. ESTILO GLOBAL
+   ======================================= */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    letter-spacing: 0.2px;
+}
+
+/* =======================================
+   💼 3. TARJETA PRINCIPAL
+   ======================================= */
+.main-card-container {
+    width: 100%;
+    max-width: 750px;
+    background-color: var(--card-background);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px var(--shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .main-card-container:hover {
+        transform: translateY(-3px);
+    }
+
+/* =======================================
+   🩺 4. ENCABEZADO
+   ======================================= */
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-align: center;
+    padding: 30px 25px;
+}
+
+    .card-header h2 {
+        margin: 0;
+        font-size: 1.9em;
+        font-weight: 700;
+    }
+
+    .card-header p {
+        margin-top: 6px;
+        font-size: 0.95em;
+        opacity: 0.9;
+    }
+
+/* =======================================
+   📋 5. CUERPO
+   ======================================= */
+.card-body {
+    padding: 35px 40px;
+}
+
+.input-module-group-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.input-module-half {
+    flex: 1;
+}
+
+.input-label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+/* Inputs */
+.text-control, .select-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 10px;
+    background-color: #fbfcfd;
+    transition: all 0.25s ease;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+    .text-control:focus, .select-control:focus {
+        border-color: var(--accent-color);
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 180, 216, 0.25);
+        outline: none;
+    }
+
+/* =======================================
+   🧾 6. BOTÓN Y ACCIONES
+   ======================================= */
+.btn-action-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0, 119, 182, 0.25);
+}
+
+    .btn-action-primary:hover {
+        background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+        transform: translateY(-1px);
+        box-shadow: 0 5px 15px rgba(0, 180, 216, 0.35);
+    }
+
+/* =======================================
+   📊 7. GRID DE RESULTADOS
+   ======================================= */
+.results-grid {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+    .results-grid th {
+        background: var(--primary-dark);
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.95em;
+    }
+
+    .results-grid td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e9edf2;
+        color: var(--text-muted);
+        font-size: 0.95em;
+    }
+
+    .results-grid tr:hover {
+        background-color: #f0f9ff;
+    }
+
+/* =======================================
+   🧭 8. FOOTER
+   ======================================= */
+.card-footer {
+    background-color: #f9f9fb;
+    border-top: 1px solid var(--border-color);
+    padding: 20px 30px;
+    text-align: right;
+}
+
+.link-secondary {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+    .link-secondary:hover {
+        color: var(--accent-color);
+    }
+
+/* =======================================
+   ⚠️ 9. MENSAJES
+   ======================================= */
+.message-error {
+    color: #d90429;
+    background-color: #ffe5e5;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* =======================================
+   📱 10. RESPONSIVE
+   ======================================= */
+@media (max-width: 700px) {
+    .main-card-container {
+        max-width: 95%;
+    }
+
+    .input-module-group-horizontal {
+        flex-direction: column;
+    }
+
+    .btn-action-primary {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .card-body {
+        padding: 25px 20px;
+    }
+}

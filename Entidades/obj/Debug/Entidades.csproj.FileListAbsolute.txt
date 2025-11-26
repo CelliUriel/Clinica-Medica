@@ -1,0 +1,174 @@
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\Entidades.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csc.exe
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csc.exe.config
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csc.rsp
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csi.exe
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csi.exe.config
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\csi.rsp
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.AppContext.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Console.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Globalization.Calendars.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.IO.Compression.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.IO.FileSystem.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Net.Http.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Net.Sockets.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.ValueTuple.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Xml.XPath.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\vbc.exe
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\vbc.exe.config
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\vbc.rsp
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\obj\Debug\Entidades.csproj.Up2Date
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\obj\Debug\Entidades.dll
+C:\Users\Jero\Desktop\Facultad\Programación III\TP Integrador (Campus)\Entidades\obj\Debug\Entidades.pdb
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\Entidades.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\Entidades.pdb
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csc.exe
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csc.exe.config
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csc.rsp
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csi.exe
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csi.exe.config
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\csi.rsp
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.Managed.Core.targets
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\Microsoft.Win32.Primitives.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.AppContext.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Console.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Globalization.Calendars.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.IO.Compression.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.IO.Compression.ZipFile.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.IO.FileSystem.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Net.Http.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Net.Sockets.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Encoding.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Primitives.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Text.Encoding.CodePages.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Threading.Tasks.Extensions.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.ValueTuple.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Xml.ReaderWriter.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Xml.XmlDocument.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Xml.XPath.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\System.Xml.XPath.XDocument.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\vbc.exe
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\vbc.exe.config
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\vbc.rsp
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\VBCSCompiler.exe
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\obj\Debug\Entidades.csproj.Up2Date
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\obj\Debug\Entidades.dll
+E:\TP_INTEGRADOR_GRUPO_8\Entidades\obj\Debug\Entidades.pdb
+E:\Clinica-Medica-main\Entidades\bin\Debug\Entidades.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\Entidades.pdb
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csc.exe
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csc.exe.config
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csc.rsp
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csi.exe
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csi.exe.config
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\csi.rsp
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.Managed.Core.targets
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\Microsoft.Win32.Primitives.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.AppContext.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Console.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Globalization.Calendars.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.IO.Compression.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.IO.Compression.ZipFile.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.IO.FileSystem.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Net.Http.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Net.Sockets.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Text.Encoding.CodePages.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.ValueTuple.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Xml.ReaderWriter.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Xml.XmlDocument.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Xml.XPath.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\System.Xml.XPath.XDocument.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\vbc.exe
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\vbc.exe.config
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\vbc.rsp
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\VBCSCompiler.exe
+E:\Clinica-Medica-main\Entidades\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\Clinica-Medica-main\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Clinica-Medica-main\Entidades\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Clinica-Medica-main\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\Clinica-Medica-main\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Clinica-Medica-main\Entidades\obj\Debug\Entidades.csproj.Up2Date
+E:\Clinica-Medica-main\Entidades\obj\Debug\Entidades.dll
+E:\Clinica-Medica-main\Entidades\obj\Debug\Entidades.pdb
