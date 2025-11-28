@@ -55,7 +55,7 @@
 
             <!-- Pie de página -->
             <footer class="card-footer">
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformesMenu.aspx">
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformeMenu.aspx">
                     ← Volver al Menú de Informes
                 </asp:LinkButton>
             </footer>

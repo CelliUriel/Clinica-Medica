@@ -168,7 +168,7 @@
                     <label for="<%= tbxFiltro.ClientID %>">Buscar Paciente (DNI / Nombre):</label>
                     <asp:TextBox ID="tbxFiltro" runat="server" CssClass="text-control"></asp:TextBox>
                 </div>
-                <asp:Button ID="BtnFiltrarPaciente" runat="server" Text="Buscar" CssClass="btn-action-primary" OnClick="BtnFiltrarPaciente_Click" />
+                <asp:Button ID="btnFiltrarPaciente" runat="server" Text="Buscar" CssClass="btn-action-primary" OnClick="btnFiltrarPaciente_Click" />
             </div>
 
             <hr />

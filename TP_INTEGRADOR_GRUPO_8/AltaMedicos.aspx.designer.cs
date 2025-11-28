@@ -33,24 +33,6 @@ namespace TP_INTEGRADOR_GRUPO_8
         protected global::System.Web.UI.WebControls.Label lblNombre;
 
         /// <summary>
-        /// Control tbLegajo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbLegajo;
-
-        /// <summary>
-        /// Control rfvLegajo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLegajo;
-
-        /// <summary>
         /// Control tbDNI.
         /// </summary>
         /// <remarks>

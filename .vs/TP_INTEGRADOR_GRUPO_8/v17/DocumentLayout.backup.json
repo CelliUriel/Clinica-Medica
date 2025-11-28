@@ -1,12 +1,343 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Biblioteca\\Desktop\\Clinica-Medica-main\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\tp_integrador_grupo_8\\menuadminstrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\menuadminstrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\tp_integrador_grupo_8\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\inicio.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\informemenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\panelmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\panelmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\abmlmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\abmlpaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlpaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\abmlpaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlpaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\altamedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altamedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|c:\\users\\admin\\documents\\programacion 3\\github\\clinica-medica-main\\clinica-medica-main\\tp_integrador_grupo_8\\menuadminstrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\menuadminstrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\tp_integrador_grupo_8\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\datos\\daousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Inicio.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-27T19:56:32.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuAdminstrador.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-27T19:54:50.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InformeMenu.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:26:57.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InformeMedicos.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:26:03.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InformePacientes.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:27:01.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AsignacionDeTurnos.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:26:48.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PanelMedico.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\PanelMedico.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\PanelMedico.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\PanelMedico.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\PanelMedico.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:29:16.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ABMLMedico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T01:26:35.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ABMLPaciente.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T01:26:13.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ABMLPaciente.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:26:09.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AltaMedicos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T01:25:54.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AltaMedicos.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:25:50.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MenuAdminstrador.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:57:35.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DaoMedicos.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoMedicos.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoMedicos.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoMedicos.cs",
+              "RelativeToolTip": "Datos\\DaoMedicos.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA0wG8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:06:51.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AltaPaciente.aspx",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-28T01:22:38.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NegocioUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Negocio\\NegocioUsuario.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioUsuario.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Negocio\\NegocioUsuario.cs",
+              "RelativeToolTip": "Negocio\\NegocioUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:04:50.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Inicio.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:56:36.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DaoPacientes.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoPacientes.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoPacientes.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoPacientes.cs",
+              "RelativeToolTip": "Datos\\DaoPacientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:29:49.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DaoUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoUsuario.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoUsuario.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\programacion 3\\GitHub\\Clinica-Medica-main\\Clinica-Medica-main\\Datos\\DaoUsuario.cs",
+              "RelativeToolTip": "Datos\\DaoUsuario.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAA9wGwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T19:04:57.49Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

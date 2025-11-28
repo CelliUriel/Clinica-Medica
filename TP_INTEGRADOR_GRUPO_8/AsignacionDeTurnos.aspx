@@ -69,8 +69,8 @@
             </div>
 
             <footer class="card-footer">
-                <asp:Button ID="btnAsignarTurno" runat="server" Text="ASIGNAR TURNO" CssClass="btn-action-primary" />
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/MenuPrincipal.aspx">Volver al menu principal</asp:LinkButton>
+                <asp:Button ID="btnAsignarTurno" runat="server" Text="ASIGNAR TURNO" CssClass="btn-action-primary" OnClick="btnAsignarTurno_Click" />
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/MenuAdminstrador.aspx" CausesValidation="False">Volver al menu principal</asp:LinkButton>
                 
                 <asp:Label ID="lblMensaje" runat="server" CssClass="message-error" ForeColor="Red"></asp:Label>
             </footer>

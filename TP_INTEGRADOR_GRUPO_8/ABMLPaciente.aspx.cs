@@ -1,15 +1,20 @@
-﻿using System;
-using System.Web.UI.WebControls;
+﻿using Entidades;
 using Negocio;
+using System;
+using System.Web.UI.WebControls;
 namespace TP_INTEGRADOR_GRUPO_8
 {
     public partial class ABMLPaciente : System.Web.UI.Page
     {
 
-        readonly NegocioPacientes negocio= new NegocioPacientes();
+        NegocioPacientes negocio= new NegocioPacientes();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                lblNombre.Text = usuario.getNombre_usuario().ToString();
+            }
             if (!IsPostBack)
             {
                 CargarGridView();
@@ -23,11 +28,11 @@ namespace TP_INTEGRADOR_GRUPO_8
             gvPacientesBaja.DataBind();
         }
 
-        protected void GvPacientesBaja_RowEditing(object sender, GridViewEditEventArgs e)
+        protected void gvPacientesBaja_RowEditing(object sender, GridViewEditEventArgs e)
         {
 
         }
-        protected void GvPacientesBaja_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void gvPacientesBaja_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
 
@@ -35,19 +40,19 @@ namespace TP_INTEGRADOR_GRUPO_8
         }
 
 
-        protected void GvPacientesBaja_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void gvPacientesBaja_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
 
         }
 
-        protected void BtnFiltrarPaciente_Click(object sender, EventArgs e)
+        protected void btnFiltrarPaciente_Click(object sender, EventArgs e)
         {
             string dni=tbxFiltro.Text.Trim();
 
 
             if (!string.IsNullOrWhiteSpace(dni))
             {
-                gvPacientesBaja.DataSource = negocio.FiltrarPorDniPaciente(dni);
+                gvPacientesBaja.DataSource = negocio.filtrarPorDniPaciente(dni);
                 gvPacientesBaja.DataBind();
                 tbxFiltro.Text = string.Empty;
             } else

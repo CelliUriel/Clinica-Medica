@@ -145,11 +145,6 @@
             <hr />
 
             <div class="form-grid">
-                <div class="form-group">
-                    <label for="<%= tbLegajo.ClientID %>">Legajo</label>
-                    <asp:TextBox ID="tbLegajo" runat="server" CssClass="text-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfvLegajo" runat="server" ControlToValidate="tbLegajo" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
-                </div>
 
                 <div class="form-group">
                     <label for="<%= tbDNI.ClientID %>">DNI</label>
@@ -279,7 +274,7 @@
                 <br />
                 <br />
                 <br />
-                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/ABMLMedicos.aspx">← Volver</asp:LinkButton>
+                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/ABMLMedico.aspx" CausesValidation="False">← Volver</asp:LinkButton>
             </footer>
         </div>
     </form>

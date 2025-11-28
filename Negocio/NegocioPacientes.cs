@@ -1,6 +1,5 @@
 ﻿using Datos;
 using Entidades;
-using System;
 using System.Data;
 using System.Web.UI.WebControls;
 
@@ -9,14 +8,14 @@ namespace Negocio
 {
     public class NegocioPacientes
     {
-        readonly DaoPacientes dao = new DaoPacientes();
+        DaoPacientes dao = new DaoPacientes();
 
         public DataTable ListarPacientes()
         {
             return dao.ListarPacientes();
         }
 
-        public DataTable FiltrarPorDniPaciente(string dni)
+        public DataTable filtrarPorDniPaciente(string dni)
         {
             return dao.FiltrarPacientesPorDNI(dni);
         }
@@ -37,16 +36,10 @@ namespace Negocio
             dao.CompletarDdlSexo(ddlSexo);
         }
 
-        public bool GuardarPacientes(Pacientes pacientes)
-        {
+        public bool GuardarPacientes(Pacientes pacientes){
            return dao.InsertarPacientes(pacientes);
+
         }
 
-        public bool ExistePaciente(string dni)
-        {
-            if (string.IsNullOrWhiteSpace(dni))
-                return false;
-            return dao.ExistePacientePorDni(dni);
-        }
     }
 }

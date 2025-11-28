@@ -8,10 +8,7 @@ namespace Datos
 {
     public class DaoMedicos
     {
-        static readonly AccesoDatos ds = new AccesoDatos();
-        SqlParameter SqlParametros = new SqlParameter();
-        readonly SqlConnection conexion = ds.ObtenerConexion();
-
+        AccesoDatos ds = new AccesoDatos();
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
             ddlProvincia.Items.Clear();
@@ -83,20 +80,19 @@ namespace Datos
                     cn.Open();
 
                     string consulta = @"INSERT INTO Medicos 
-                        (Codigo_Especialidad_Medico, Legajo_Medico, DNI_MEDICO, Nombre_Medico, Apellido_Medico,
+                        (Codigo_Especialidad_Medico, DNI_MEDICO, Nombre_Medico, Apellido_Medico,
                          Sexo_Medico, Nacionalidad_Medico, FechaNacimiento_Medico, Direccion_Medico,
                          ID_Localidad_Medico, ID_Provincia_Medico, Correo_Medico, Telefono_Medico,
-                         DiasAtencion_Medico, HorariosAtencion_Medico, ID_Usuario)
+                         DiasAtencion_Medico, HorariosAtencion_Medico, ID_Usuario, Estado_Medico)
                         VALUES
-                        (@Codigo, @Legajo, @DNI, @Nombre, @Apellido,
+                        (@Codigo, @DNI, @Nombre, @Apellido,
                          @Sexo, @Nacionalidad, @FechaNacimiento, @Direccion,
                          @IdLocalidad, @IdProvincia, @Correo, @Telefono,
-                         @DiasAtencion, @Horario, @IdUsuario)";
+                         @DiasAtencion, @Horario, @IdUsuario,@Estado)";
 
                     using (SqlCommand cmd = new SqlCommand(consulta, cn))
                     {
                         cmd.Parameters.AddWithValue("@Codigo", medico.GetCodigo_Especialidad_Medico());
-                        cmd.Parameters.AddWithValue("@Legajo", medico.GetLegajo_Medico());
                         cmd.Parameters.AddWithValue("@DNI", medico.GetDniMedico());
                         cmd.Parameters.AddWithValue("@Nombre", medico.GetNombre_Medico());
                         cmd.Parameters.AddWithValue("@Apellido", medico.GetApellido_Medico());
@@ -110,9 +106,10 @@ namespace Datos
                         cmd.Parameters.AddWithValue("@Telefono", medico.GetTelefono_Medico());
                         cmd.Parameters.AddWithValue("@DiasAtencion", medico.GetDiasAtencion_Medico());
                         cmd.Parameters.AddWithValue("@Horario", medico.GetHorariosAtencion_Medico());
+                        cmd.Parameters.AddWithValue("@Estado",medico.GetEstado_Medico());
                         var idUsuario = medico.GetId_Usuario_Medico();
 
-                        if (idUsuario == null)
+                        if (idUsuario <= 0)
                             cmd.Parameters.AddWithValue("@IdUsuario", DBNull.Value);
                         else
                             cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
@@ -189,7 +186,8 @@ namespace Datos
         }*/
 
         private void ArmarParametrosEliminarMedico(ref SqlCommand Comando, Medicos medico)
-        {            
+        {
+            SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@IdMedico", SqlDbType.Int);
             SqlParametros.Value = medico.GetId_Medico();
         }
@@ -197,6 +195,7 @@ namespace Datos
         public bool EliminarMedico(Medicos medico)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
+            SqlConnection conexion = accesoDatos.ObtenerConexion();
 
             SqlCommand sqlCommand = new SqlCommand();
 

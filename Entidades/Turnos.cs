@@ -2,7 +2,7 @@
 
 namespace Entidades
 {
-    internal class Turnos
+    public class Turnos
     {
         private string ID_Turno;
         private string DNI_Paciente_Turno;

@@ -15,6 +15,14 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                lblNombre.Text = usuario.getNombre_usuario().ToString();
+            
+            }
+            
+            
             if (!IsPostBack)
             {   
                 medico.CompletarDdlProvincias(ddlProvincia);
@@ -51,7 +59,6 @@ namespace TP_INTEGRADOR_GRUPO_8
                 Medicos medico = new Medicos();
 
                 medico.SetCodigo_Especialidad_Medico(int.Parse(ddlEspecialidad.SelectedValue));
-                medico.SetLegajo_Medico(tbLegajo.Text);
                 medico.SetDniMedico(tbDNI.Text);
                 medico.SetNombre_Medico(tbNombre.Text);
                 medico.SetApellido_Medico(TbApellido.Text);
@@ -65,7 +72,8 @@ namespace TP_INTEGRADOR_GRUPO_8
                 medico.SetTelefono_Medico(tbTelefono.Text);
                 medico.SetDiasAtencion_Medico(string.Join(", ", chkblDias.Items.Cast<ListItem>().Where(i => i.Selected).Select(i => i.Text)));
                 medico.SetHorariosAtencion_Medico(ddlHoraInicio.SelectedValue + " - " + ddlHoraFin.SelectedValue);
-
+                medico.SetEstado_Medico(true);
+                medico.SetId_Usuario_Medico(idUsuarioCreado);
                 NegocioMedicos negocio = new NegocioMedicos();
                 bool exito = negocio.GuardarMedico(medico);
 

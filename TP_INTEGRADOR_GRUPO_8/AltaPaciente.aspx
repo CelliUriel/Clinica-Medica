@@ -188,14 +188,10 @@
 
                 <div class="form-group">
                     <label for="<%= ddlProvincias.ClientID %>">Provincia</label>
-                    <asp:DropDownList ID="ddlProvincias" runat="server" 
-                            CssClass="select-control" 
-                            OnSelectedIndexChanged="DdlProvincias_SelectedIndexChanged" 
-                            AutoPostBack="True">
+                    <asp:DropDownList ID="ddlProvincias" runat="server" CssClass="select-control" OnSelectedIndexChanged="ddlProvincias_SelectedIndexChanged" AutoPostBack="True">
                         <asp:ListItem>--- Seleccionar ---</asp:ListItem>
                     </asp:DropDownList>
-                    <br />
-&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="ddlProvincias" ErrorMessage="Se necesita completar este campo" ForeColor="#3366CC"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="ddlProvincias" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
 
                 <div class="form-group">
@@ -211,7 +207,7 @@
                 </div>
             </div>
 
-            <asp:Button ID="btnGuardar" runat="server" Text="Guardar Paciente" CssClass="btn-action-primary" OnClick="BtnGuardar_Click" />
+            <asp:Button ID="btnGuardar" runat="server" Text="Guardar Paciente" CssClass="btn-action-primary" OnClick="btnGuardar_Click" />
 
             <asp:Label ID="lblMensaje" runat="server"></asp:Label>
 

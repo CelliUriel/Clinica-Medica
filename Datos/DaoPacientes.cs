@@ -2,7 +2,6 @@
 using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Runtime.CompilerServices;
 using System.Web.UI.WebControls;
 
 
@@ -10,9 +9,9 @@ namespace Datos
 {
     public class DaoPacientes
     {
-        static readonly AccesoDatos ds = new AccesoDatos();
-        SqlParameter SqlParametros = new SqlParameter();
-        readonly SqlConnection conexion = ds.ObtenerConexion();
+
+        AccesoDatos ds = new AccesoDatos();
+
 
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
@@ -75,6 +74,9 @@ namespace Datos
                 "P.Estado_Paciente AS Estado " +
                  "FROM Pacientes P";
 
+
+
+
             return ds.ObtenerTabla(consultaSQL);
 
         }
@@ -104,6 +106,7 @@ namespace Datos
         }
         private void ArmarParametrosEliminarPaciente(ref SqlCommand Comando, Pacientes pacientes)
         {
+            SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@DNIPaciente", SqlDbType.Char, 8);
             SqlParametros.Value = pacientes.Dni_Paciente;
         }
@@ -113,6 +116,7 @@ namespace Datos
         public bool EliminarPaciente(Pacientes pacientes)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
+            SqlConnection conexion = accesoDatos.ObtenerConexion();
 
             SqlCommand sqlCommand = new SqlCommand();
 
@@ -186,20 +190,8 @@ namespace Datos
         }
 
 
-        public bool ExistePacientePorDni(string dni)
-        {
-            string query = "SELECT 1 FROM Pacientes WHERE DNI_Paciente = @dni";
 
-            using (SqlConnection conn = ds.ObtenerConexion())
-            using (SqlCommand cmd = new SqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@dni", dni);
 
-                conn.Open();
-                object result = cmd.ExecuteScalar();
 
-                return result != null;
-            }
-        }
     }
 }

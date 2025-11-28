@@ -116,21 +116,17 @@
                     ABML Médicos
                 </asp:LinkButton>
 
-                <asp:LinkButton ID="lnkBtnCrearUsuario" runat="server" CssClass="menu-button">
-                    Crear Usuario Médico
-                </asp:LinkButton>
-
-                <asp:LinkButton ID="lnkbtnAsignacionT" runat="server" CssClass="menu-button">
+                <asp:LinkButton ID="lnkbtnAsignacionT" runat="server" CssClass="menu-button" PostBackUrl="~/AsignacionDeTurnos.aspx">
                     Asignación de Turnos
                 </asp:LinkButton>
 
-                <asp:LinkButton ID="lnkbtnInformes" runat="server" CssClass="menu-button">
+                <asp:LinkButton ID="lnkbtnInformes" runat="server" CssClass="menu-button" PostBackUrl="~/InformeMenu.aspx">
                     Informes
                 </asp:LinkButton>
             </div>
 
             <footer>
-                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="footer-link" PostBackUrl="~/Login.aspx">
+                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="footer-link" PostBackUrl="~/Inicio.aspx">
                     ← Cerrar sesión
                 </asp:LinkButton>
             </footer>

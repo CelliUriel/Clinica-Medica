@@ -1,4 +1,5 @@
-﻿using Negocio;
+﻿using Entidades;
+using Negocio;
 using System;
 using System.Web.UI.WebControls;
 
@@ -11,7 +12,11 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                lblNombre.Text = usuario.getNombre_usuario().ToString();
+            }
             if (!IsPostBack)
             {
                 CargarGridMedicos();

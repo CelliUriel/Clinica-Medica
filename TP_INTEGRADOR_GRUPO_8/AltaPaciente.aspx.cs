@@ -6,39 +6,29 @@ namespace TP_INTEGRADOR_GRUPO_8
 {
     public partial class AltaPaciente : System.Web.UI.Page
     {
-        readonly NegocioPacientes negocio= new NegocioPacientes();
-
+        NegocioPacientes negocio= new NegocioPacientes();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                lblNombre.Text = usuario.getNombre_usuario().ToString();
+            }
+
             if (!IsPostBack)
             {
 
                 //negocio.CompletarDdlLocalidades(ddlLocalidades);
                 negocio.CompletarDdlProvincias(ddlProvincias);
                 negocio.CompletarDdlSexo(ddlSexo);
+
+
             }
         }
 
-        protected void BtnGuardar_Click(object sender, EventArgs e)
+        protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            NegocioPacientes negocio = new NegocioPacientes();
-
-            bool existe = negocio.ExistePaciente(tbxDNI.Text);
-
-            if (string.IsNullOrWhiteSpace(tbxDNI.Text))
-            {
-                lblMensaje.Text = "Debe ingresar un DNI.";
-                lblMensaje.ForeColor = System.Drawing.Color.Red;
-                return;
-            }
-
-            if (existe)
-            {
-                lblMensaje.Text = "El paciente ya existe.";
-                lblMensaje.ForeColor = System.Drawing.Color.Red;
-                return;
-            }
-
             Pacientes pacientes = new Pacientes();
 
             pacientes.SetDni_Paciente(tbxDNI.Text);
@@ -54,21 +44,27 @@ namespace TP_INTEGRADOR_GRUPO_8
             pacientes.SetTelefono_Paciente(tbxTelefono.Text);
             pacientes.SetEstado_Paciente(true);
 
-            bool exito = negocio.GuardarPacientes(pacientes);
+
+
+            NegocioPacientes negocio=new NegocioPacientes();
+
+            bool exito=negocio.GuardarPacientes(pacientes);
 
             if (exito)
             {
+
                 lblMensaje.Text = "Paciente guardado correctamente";
                 lblMensaje.ForeColor = System.Drawing.Color.Green;
-            }
-            else
+
+            } else
             {
-                lblMensaje.Text = "Error al guardar el paciente.";
+                lblMensaje.Text = "Error al guardar el Paciente";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
             }
+
         }
 
-        protected void DdlProvincias_SelectedIndexChanged(object sender, EventArgs e)
+        protected void ddlProvincias_SelectedIndexChanged(object sender, EventArgs e)
         {
             int idProvincia = int.Parse(ddlProvincias.SelectedValue);
             NegocioPacientes negocio = new NegocioPacientes();
