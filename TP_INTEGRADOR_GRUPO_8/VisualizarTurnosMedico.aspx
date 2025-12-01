@@ -83,29 +83,48 @@
                 </asp:DropDownList>
 
                 &nbsp;
-                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
+                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
             </div>
 
             <!-- GRID -->
             <asp:GridView ID="gvTurnos" runat="server" AutoGenerateColumns="False" CssClass="grid">
                 <Columns>
-                    <asp:BoundField DataField="Fecha" HeaderText="Fecha" />
-                    <asp:BoundField DataField="Hora" HeaderText="Hora" />
-                    <asp:BoundField DataField="Paciente" HeaderText="Paciente" />
-                    <asp:BoundField DataField="Estado" HeaderText="Estado" />
-                    <asp:BoundField DataField="Observaciones" HeaderText="Observaciones" />
+                    <asp:TemplateField HeaderText="Fecha">
+                        <ItemTemplate>
+                            <asp:Label ID="it_listadoFecha" runat="server" Text='<%# Bind("Fecha") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Hora">
+                        <ItemTemplate>
+                            <asp:Label ID="it_listadoHora" runat="server" Text='<%# Bind("Hora") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Paciente">
+                        <ItemTemplate>
+                            <asp:Label ID="it_listadoPaciente" runat="server" Text='<%# Bind("Paciente") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Estado">
+                        <ItemTemplate>
+                            <asp:Label ID="it_listadoEstado" runat="server" Text='<%# Bind("Estado") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Observaciones">
+                        <ItemTemplate>
+                            <asp:Label ID="it_listadoObservaciones" runat="server" Text='<%# Bind("Observaciones") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
 
                     <asp:TemplateField HeaderText="Acciones">
                         <ItemTemplate>
                             <asp:Button ID="btnEditar" runat="server" Text="Editar"
-                                CommandName="EditarTurno" CommandArgument='<%# Eval("ID_Turno") %>' />
+                                CommandName="EditarTurno" CommandArgument= '0' />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
 
-            <asp:Button ID="btnVolver" runat="server" Text="← Volver al Menú" CssClass="btnVolver"
-                OnClick="btnVolver_Click" />
+            <asp:Button ID="btnVolver" runat="server" Text="← Volver al Menú" CssClass="btnVolver"/>
 
         </div>
     </form>

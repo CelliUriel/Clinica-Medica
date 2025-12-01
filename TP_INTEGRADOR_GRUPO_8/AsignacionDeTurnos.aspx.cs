@@ -6,18 +6,25 @@ namespace TP_INTEGRADOR_GRUPO_8
 {
     public partial class AsignacionDeTurnos : System.Web.UI.Page
     {
+        readonly NegocioMedicos medicos = new NegocioMedicos();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                medicos.CompletarDdlEspecialidades(ddlEspecialidad);
+                medicos.CompletarDdlPacientes(ddlPaciente);
+                medicos.CompletarDdlHoras(ddlHora);
+            }
         }
 
-        protected void btnAsignarTurno_Click(object sender, EventArgs e)
+        protected void BtnAsignarTurno_Click(object sender, EventArgs e)
         {
             {
                 Turnos turno = new Turnos();
 
                 turno.SetDNI_Paciente_Turno(ddlPaciente.SelectedValue);
-                turno.SetId_Medico_Turno(ddlMedico.SelectedValue);
+                turno.SetId_Medico_Turno(ddlMedicos.SelectedValue);
                 turno.SetCodigo_Especialidad_Turno(ddlEspecialidad.SelectedValue);
 
                 turno.SetFecha_Turno(DateTime.Parse(tbxFecha.Text));
@@ -39,6 +46,14 @@ namespace TP_INTEGRADOR_GRUPO_8
                     lblMensaje.Text = "Error al asignar turno.";
                 }
             }
+        }
+
+        protected void DdlEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idEspecialidad = int.Parse(ddlEspecialidad.SelectedValue);
+
+            NegocioMedicos negocio = new NegocioMedicos();
+            negocio.CompletarDdlMedicos(ddlMedicos, idEspecialidad);
         }
     }
 }

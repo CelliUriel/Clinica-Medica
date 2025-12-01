@@ -8,7 +8,10 @@ namespace Datos
 {
     public class DaoMedicos
     {
-        AccesoDatos ds = new AccesoDatos();
+        static readonly AccesoDatos ds = new AccesoDatos();
+        readonly SqlConnection conexion = ds.ObtenerConexion();
+        SqlParameter SqlParametros = new SqlParameter();
+
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
             ddlProvincia.Items.Clear();
@@ -71,6 +74,55 @@ namespace Datos
             }
         }
 
+        public void CompletarDdlMedicos(DropDownList ddlMedicos, int idEspecialidad)
+        {
+            ddlMedicos.Items.Clear();
+            ddlMedicos.Items.Add(new ListItem("---Seleccionar---", "0"));
+
+            if (idEspecialidad == 0) return;
+
+            DataTable tabla = new AccesoDatos().CompletarDdl(
+                $"SELECT ID_Medico, (Nombre_Medico + ' ' + Apellido_Medico) AS NombreCompleto " +
+                $"FROM Medicos WHERE Codigo_Especialidad_Medico = {idEspecialidad} " +
+                $"ORDER BY Apellido_Medico, Nombre_Medico"
+            );
+
+            foreach (DataRow fila in tabla.Rows)
+            {
+                ddlMedicos.Items.Add(
+                    new ListItem(
+                        fila["NombreCompleto"].ToString(),
+                        fila["ID_Medico"].ToString()
+                    )
+                );
+            }
+        }
+
+        public void CompletarDdlPacientes(DropDownList ddlPacientes)
+        {
+            ddlPacientes.Items.Clear();
+            ddlPacientes.Items.Add(new ListItem("---Seleccionar---", "0"));
+
+            DataTable tabla = new AccesoDatos().CompletarDdl(
+                "SELECT DNI_Paciente, Nombre_Paciente, Apellido_Paciente " +
+                "FROM Pacientes " +
+                "ORDER BY Apellido_Paciente, Nombre_Paciente"
+            );
+
+            foreach (DataRow fila in tabla.Rows)
+            {
+                string nombreCompleto = fila["Apellido_Paciente"] + " " + fila["Nombre_Paciente"];
+
+                ddlPacientes.Items.Add(
+                    new ListItem(
+                        nombreCompleto,
+                        fila["DNI_Paciente"].ToString()
+                    )
+                );
+            }
+        }
+
+
         public bool InsertarMedico(Medicos medico)
         {
             try
@@ -130,25 +182,21 @@ namespace Datos
             return daoMedicos.InsertarMedico(medico);
         }
 
-
         public DataTable ListarMedicos()
         {
             string consultaSQL =
                 "SELECT " +
-                "M.DNI_MEDICO AS DNI , " +
+                "M.DNI_MEDICO AS DNI, " +
                 "M.Nombre_Medico AS Nombre, " +
                 "M.Apellido_Medico AS Apellido, " +
-                "M.Telefono_Medico AS  Telefono, " +
+                "M.Telefono_Medico AS Telefono, " +
                 "M.Estado_Medico AS Estado, " +
-                "E.Nombre_Especialidad AS NombreEspecialidad, " +
-                "M.Codigo_Especialidad_Medico  " +
-                "FROM Medicos M INNER JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad";
+                "E.Nombre_Especialidad AS Especialidad " +
+                "FROM Medicos M " +
+                "JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad";
 
             return ds.ObtenerTabla(consultaSQL);
         }
-
-        
-
 
         public DataTable FiltrarMedicoPorDNI(int dniMedico)
         {
@@ -187,7 +235,6 @@ namespace Datos
 
         private void ArmarParametrosEliminarMedico(ref SqlCommand Comando, Medicos medico)
         {
-            SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@IdMedico", SqlDbType.Int);
             SqlParametros.Value = medico.GetId_Medico();
         }
@@ -195,7 +242,6 @@ namespace Datos
         public bool EliminarMedico(Medicos medico)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
-            SqlConnection conexion = accesoDatos.ObtenerConexion();
 
             SqlCommand sqlCommand = new SqlCommand();
 
@@ -233,6 +279,5 @@ namespace Datos
             AccesoDatos ds = new AccesoDatos();
             return ds.ObtenerTabla("Medicos", cmd);
         }
-
     }
 }

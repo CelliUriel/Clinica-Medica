@@ -9,9 +9,9 @@ namespace Datos
 {
     public class DaoPacientes
     {
-
-        AccesoDatos ds = new AccesoDatos();
-
+        static readonly AccesoDatos ds = new AccesoDatos();
+        SqlParameter SqlParametros = new SqlParameter();
+        readonly SqlConnection conexion = ds.ObtenerConexion();
 
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
@@ -55,7 +55,18 @@ namespace Datos
         }
 
 
+        public void CompletarDdlPacientes(DropDownList ddlPaciente)
+        {
+            ddlPaciente.Items.Clear();
+            ddlPaciente.Items.Add(new ListItem("---Seleccionar---", "0"));
 
+            DataTable tabla = new AccesoDatos().CompletarDdl("SELECT * FROM Pacientes ORDER BY Apellido_Paciente");
+
+            foreach (DataRow fila in tabla.Rows)
+            {
+                ddlPaciente.Items.Add(new ListItem(fila["Apellido_Paciente " + "Nombre_Paciente"].ToString()));
+            }
+        }
 
         public DataTable ListarPacientes()
         {
@@ -106,7 +117,6 @@ namespace Datos
         }
         private void ArmarParametrosEliminarPaciente(ref SqlCommand Comando, Pacientes pacientes)
         {
-            SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@DNIPaciente", SqlDbType.Char, 8);
             SqlParametros.Value = pacientes.Dni_Paciente;
         }
@@ -116,7 +126,6 @@ namespace Datos
         public bool EliminarPaciente(Pacientes pacientes)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
-            SqlConnection conexion = accesoDatos.ObtenerConexion();
 
             SqlCommand sqlCommand = new SqlCommand();
 

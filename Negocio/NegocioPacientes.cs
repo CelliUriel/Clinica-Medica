@@ -41,5 +41,9 @@ namespace Negocio
 
         }
 
+        public void CompletarDdlPacientes(DropDownList ddlPacientes)
+        {
+            dao.CompletarDdlPacientes(ddlPacientes);
+        }
     }
 }

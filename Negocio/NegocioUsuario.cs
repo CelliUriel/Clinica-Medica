@@ -10,7 +10,7 @@ namespace Negocio
 {
     public class NegocioUsuario
     {
-        DaoUsuario daoUsuario = new DaoUsuario();
+        DaoUsuarios daoUsuario = new DaoUsuarios();
 
         public bool guardarUsuario(Usuario usuario)
         {
@@ -24,7 +24,7 @@ namespace Negocio
 
         public int CrearUsuarioYDevolverID(Usuario usuario)
         {
-            DaoUsuario daoUsuario = new DaoUsuario();
+            DaoUsuarios daoUsuario = new DaoUsuarios();
             return daoUsuario.InsertarUsuarioYDevolverID(usuario);
         }
 

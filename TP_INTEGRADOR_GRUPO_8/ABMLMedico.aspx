@@ -231,7 +231,7 @@
                             <asp:TextBox ID="txt_eit_especialidad" runat="server" Text='<%# Bind("Codigo_Especialidad_Medico") %>'></asp:TextBox>
                         </EditItemTemplate>
                         <ItemTemplate>
-                            <asp:Label ID="lbl_it_especialidad" runat="server" Text='<%# Bind("Codigo_Especialidad_Medico") %>'></asp:Label>
+                            <asp:Label ID="lbl_it_especialidad" runat="server" Text='<%# Bind("Especialidad") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

@@ -116,8 +116,6 @@ namespace Datos
             SqlConnection cn = ObtenerConexion();
             using (cn)
             {
-
-
                 SqlDataAdapter da = ObtenerAdaptador(consultaSQL, cn);
                 DataTable tabla = new DataTable();
                 da.Fill(tabla);

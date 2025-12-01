@@ -12,7 +12,6 @@ namespace TP_INTEGRADOR_GRUPO_8
         readonly NegocioMedicos medico = new NegocioMedicos();
 
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Usuario"] != null)
@@ -28,7 +27,8 @@ namespace TP_INTEGRADOR_GRUPO_8
                 medico.CompletarDdlProvincias(ddlProvincia);
                 medico.CompletarDdlSexo(ddlSexo);
                 medico.CompletarDdlEspecialidades(ddlEspecialidad);
-                medico.CompletarDdlHoras(ddlHoraInicio, ddlHoraFin);
+                medico.CompletarDdlHoras(ddlHoraInicio);
+                medico.CompletarDdlHoras(ddlHoraFin);
             }
         }
 

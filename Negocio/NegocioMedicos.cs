@@ -29,10 +29,9 @@ namespace Negocio
             daoMedicos.CompletarDdlSexo(ddlSexo);
         }
 
-        public void CompletarDdlHoras(DropDownList ddlHoraInicio, DropDownList ddlHoraFin)
+        public void CompletarDdlHoras(DropDownList ddlHoraInicio)
         {
             daoMedicos.CompletarDdlHoras(ddlHoraInicio);
-            daoMedicos.CompletarDdlHoras(ddlHoraFin);
         }
 
         public bool GuardarMedico(Medicos medico)
@@ -48,6 +47,15 @@ namespace Negocio
         public DataTable BuscarPorDNI(string dni)
         {
             return daoMedicos.BuscarMedicoPorDNI(dni);
+        }
+
+        public void CompletarDdlMedicos(DropDownList ddlMedicos, int idEspecialidad)
+        {
+            daoMedicos.CompletarDdlMedicos(ddlMedicos, idEspecialidad);
+        }
+        public void CompletarDdlPacientes(DropDownList ddlPacientes)
+        {
+            daoMedicos.CompletarDdlPacientes(ddlPacientes);
         }
 
     }
