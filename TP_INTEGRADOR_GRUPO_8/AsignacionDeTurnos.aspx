@@ -23,19 +23,21 @@
 
                 <div class="input-module">
                     <label class="input-label" for="<%= ddlEspecialidad.ClientID %>">Especialidad:</label>
-                    <asp:DropDownList ID="ddlEspecialidad" runat="server" CssClass="select-control">
+                    <asp:DropDownList ID="ddlEspecialidad" runat="server" CssClass="select-control" OnSelectedIndexChanged="DdlEspecialidad_SelectedIndexChanged" AutoPostBack="True">
                         <asp:ListItem Value="">-- Seleccionar Especialidad --</asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlEspecialidad" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
 
                 <div class="input-module">
-                    <label class="input-label" for="<%= ddlMedico.ClientID %>">Médico:</label>
-                    <asp:DropDownList ID="ddlMedico" runat="server" CssClass="select-control">
-                        <asp:ListItem Value="">-- Seleccionar Médico --</asp:ListItem>
+                    <label class="input-label" for="<%= ddlMedicos.ClientID %>">Médico:</label>
+                    <asp:DropDownList ID="ddlMedicos" runat="server" AutoPostBack="true" CssClass="select-control">
+                        <asp:ListItem Value="">-- Seleccionar Medico --</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="ddlMedico" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <br/>
+                    <asp:RequiredFieldValidator ID="rfvMedicosDDL" runat="server" ControlToValidate="ddlMedicos" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
+
 
                 <div class="input-module patient-selector">
                     <label class="input-label" for="<%= ddlPaciente.ClientID %>">Paciente:</label>
@@ -69,8 +71,8 @@
             </div>
 
             <footer class="card-footer">
-                <asp:Button ID="btnAsignarTurno" runat="server" Text="ASIGNAR TURNO" CssClass="btn-action-primary" />
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/MenuPrincipal.aspx">Volver al menu principal</asp:LinkButton>
+                <asp:Button ID="btnAsignarTurno" runat="server" Text="ASIGNAR TURNO" CssClass="btn-action-primary" OnClick="BtnAsignarTurno_Click" />
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/MenuAdminstrador.aspx" CausesValidation="False">Volver al menu principal</asp:LinkButton>
                 
                 <asp:Label ID="lblMensaje" runat="server" CssClass="message-error" ForeColor="Red"></asp:Label>
             </footer>

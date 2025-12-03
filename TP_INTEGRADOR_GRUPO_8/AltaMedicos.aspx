@@ -145,11 +145,6 @@
             <hr />
 
             <div class="form-grid">
-                <div class="form-group">
-                    <label for="<%= tbLegajo.ClientID %>">Legajo</label>
-                    <asp:TextBox ID="tbLegajo" runat="server" CssClass="text-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfvLegajo" runat="server" ControlToValidate="tbLegajo" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
-                </div>
 
                 <div class="form-group">
                     <label for="<%= tbDNI.ClientID %>">DNI</label>
@@ -196,16 +191,15 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="<%= ddlLocalidad.ClientID %>">Localidad</label>
-                    <asp:DropDownList ID="ddlLocalidad" runat="server" CssClass="select-control">
+                    <label for="<%= ddlLocalidad.ClientID %>">Provincia</label>
+                    <asp:DropDownList ID="ddlProvincia" runat="server" CssClass="select-control" AutoPostBack="true" OnSelectedIndexChanged="DdlProvincia_SelectedIndexChanged">
                         <asp:ListItem>--- Seleccionar ---</asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="ddlLocalidad" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
 
                 <div class="form-group">
-                    <label for="<%= ddlProvincia.ClientID %>">Provincia</label>
-                    <asp:DropDownList ID="ddlProvincia" runat="server" CssClass="select-control">
+                    Localidad <asp:DropDownList ID="ddlLocalidad" runat="server" CssClass="select-control">
                         <asp:ListItem>--- Seleccionar ---</asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="ddlProvincia" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
@@ -259,11 +253,28 @@
                     <asp:ListItem>Sábado</asp:ListItem>
                 </asp:CheckBoxList>
             </div>
+            <div class="form-group">
+        <label for="<%= tbUsuario.ClientID %>">Usuario</label>
+        <asp:TextBox ID="tbUsuario" runat="server" CssClass="text-control"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="tbUsuario" ForeColor="#3366CC">Campo obligatorio</asp:RequiredFieldValidator>
+    </div>
 
-            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn-action-primary" />
+    <div class="form-group">
+        <label for="<%= tbContrasenia.ClientID %>">Contraseña</label>
+        <asp:TextBox ID="tbContrasenia" runat="server" CssClass="text-control" TextMode="Password"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="tbContrasenia" ForeColor="#3366CC">Campo obligatorio</asp:RequiredFieldValidator>
+    </div>
+
+</div>
+
+            <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn-action-primary" OnClick="BtnGuardar_Click" />
 
             <footer>
-                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/ABMLMedicos.aspx" OnClick="lnkVolver_Click">← Volver</asp:LinkButton>
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                <br />
+                <br />
+                <br />
+                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/ABMLMedico.aspx" CausesValidation="False">← Volver</asp:LinkButton>
             </footer>
         </div>
     </form>

@@ -188,7 +188,7 @@
 
                 <div class="form-group">
                     <label for="<%= ddlProvincias.ClientID %>">Provincia</label>
-                    <asp:DropDownList ID="ddlProvincias" runat="server" CssClass="select-control">
+                    <asp:DropDownList ID="ddlProvincias" runat="server" CssClass="select-control" OnSelectedIndexChanged="ddlProvincias_SelectedIndexChanged" AutoPostBack="True">
                         <asp:ListItem>--- Seleccionar ---</asp:ListItem>
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="ddlProvincias" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
@@ -207,7 +207,9 @@
                 </div>
             </div>
 
-            <asp:Button ID="btnGuardar" runat="server" Text="Guardar Paciente" CssClass="btn-action-primary" />
+            <asp:Button ID="btnGuardar" runat="server" Text="Guardar Paciente" CssClass="btn-action-primary" OnClick="btnGuardar_Click" />
+
+            <asp:Label ID="lblMensaje" runat="server"></asp:Label>
 
             <footer>
                 <asp:LinkButton ID="lnkVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/ABMLPaciente.aspx" CausesValidation="False">← Volver</asp:LinkButton>

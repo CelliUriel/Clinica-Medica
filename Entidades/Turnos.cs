@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Turnos
+    public class Turnos
     {
         private string ID_Turno;
         private string DNI_Paciente_Turno;
@@ -14,7 +10,7 @@ namespace Entidades
         private string Codigo_Especialidad_Turno;
         private DateTime Fecha_Turno;
         private string Hora_Turno;
-        private string Estado_Turno;
+        private int Estado_Turno;
         private string Observacion_Turno;
 
         public Turnos() { }

@@ -127,12 +127,14 @@
             <div class="input-group">
                 <label for="<%= tbContraseniaDeUsuario.ClientID %>">Contraseña</label>
                 <asp:TextBox ID="tbContraseniaDeUsuario" runat="server" CssClass="text-control" TextMode="Password"></asp:TextBox>
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             </div>
 
-            <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" CssClass="btn-action-primary" />
+            <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" CssClass="btn-action-primary" OnClick="btnIniciarSesion_Click" />
 
             
         </div>
     </form>
 </body>
 </html>
+

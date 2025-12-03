@@ -189,7 +189,7 @@
                 </table>
                 
                 <div style="text-align: center; margin-top: 25px;">
-                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" />
+                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" OnClick="BtnGenerarInforme_Click" />
                 </div>
             </div>
             

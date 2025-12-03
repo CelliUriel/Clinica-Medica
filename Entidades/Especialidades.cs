@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entidades
+﻿namespace Entidades
 {
     internal class Especialidades
     {
@@ -20,7 +14,7 @@ namespace Entidades
         {
             codigo_especialidad = codigo;
         }
-        public string getNombre_especialidad ()
+        public string getNombre_especialidad()
         {
             return nombre_especialidad;
         }
@@ -29,11 +23,11 @@ namespace Entidades
         {
             nombre_especialidad = nombre;
         }
-        public string getDescripcion_especialidad ()
+        public string getDescripcion_especialidad()
         {
             return descripcion_especialidad;
         }
-        public void setDescripcion_especialidad (string descripcion)
+        public void setDescripcion_especialidad(string descripcion)
         {
             descripcion_especialidad = descripcion;
         }

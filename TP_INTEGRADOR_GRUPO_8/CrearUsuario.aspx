@@ -143,7 +143,7 @@
             <asp:RequiredFieldValidator ID="rfvNombreUsuario" runat="server" ControlToValidate="txtUsuario" ForeColor="#3366CC" style="font-weight: 700">Se necesita completar este campo.</asp:RequiredFieldValidator>
 
             <label for="<%= txtContrasenia.ClientID %>">Contraseña:</label>
-            <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" CssClass="text-control" />
+            <asp:TextBox ID="txtContrasenia" runat="server" TextMode="Password" CssClass="text-control"  />
 
             <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="txtContrasenia" ForeColor="#3366CC" style="font-weight: 700">Se necesita completar este campo.</asp:RequiredFieldValidator>
 
@@ -152,7 +152,9 @@
 
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtRepetirContrasenia" ForeColor="#3366CC" style="font-weight: 700">Se necesita completar este campo.</asp:RequiredFieldValidator>
 
-            <asp:Button ID="btnRegistrar" runat="server" Text="Registrar Usuario" CssClass="btn-primary" />
+            <asp:Button ID="btnRegistrar" runat="server" Text="Registrar Usuario" CssClass="btn-primary" OnClick="btnRegistrar_Click" />
+
+            <asp:Label ID="lblMensaje" runat="server"></asp:Label>
 
             <a href="~/MenuAdminstrador.aspx" class="footer-link" runat="server">← Volver al Panel de Administración</a>
         </div>

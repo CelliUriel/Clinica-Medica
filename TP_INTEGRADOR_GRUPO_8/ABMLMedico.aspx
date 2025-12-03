@@ -103,6 +103,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
+            margin-right: 0px;
         }
 
         .gridview-style th {
@@ -177,20 +178,62 @@
             <h3 style="color:#0d6efd; margin-bottom: 10px;">Listado de Médicos</h3>
             <asp:GridView ID="gvMedicosBaja" runat="server"
                 AutoGenerateColumns="False"
-                DataKeyNames="DNI_Medico"
+                DataKeyNames="DNI"
                 OnRowCommand="gvMedicosBaja_RowCommand"
                 AllowPaging="True"
                 OnPageIndexChanging="gvMedicosBaja_PageIndexChanging"
                 EmptyDataText="No se encontraron médicos registrados."
-                CssClass="gridview-style">
+                CssClass="gridview-style" AutoGenerateEditButton="True" OnRowEditing="gvMedicosBaja_RowEditing">
 
                 <Columns>
-                    <asp:BoundField DataField="DNI_Medicos" HeaderText="DNI" />
-                    <asp:BoundField DataField="Nombre_Medicos" HeaderText="Nombre" />
-                    <asp:BoundField DataField="Apellido_Medicos" HeaderText="Apellido" />
-                    <asp:BoundField DataField="Telefono_Pacientes" HeaderText="Teléfono" />
-                    <asp:BoundField DataField="BajaLogica_Pacientes" HeaderText="Estado (0 = Activo)" />
-                    <asp:BoundField DataField="Especialidad" HeaderText="Especialidad" />
+                    <asp:TemplateField HeaderText="DNI">
+                        <EditItemTemplate>
+                            <asp:Label ID="lbl_eit_dni" runat="server" Text='<%# Bind("DNI") %>'></asp:Label>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_dni" runat="server" Text='<%# Bind("DNI") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Nombre">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txt_eit_nombre" runat="server" Text='<%# Bind("Nombre") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Nombre" runat="server" Text='<%# Bind("Nombre") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Apellido">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txt_eit_apellido" runat="server" Text='<%# Bind("Apellido") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_Apellido" runat="server" Text='<%# Bind("Apellido") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Teléfono">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txt_eit_telefono" runat="server" Text='<%# Bind("Telefono") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_telefono" runat="server" Text='<%# Bind("Telefono") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Estado (0 = Activo)">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txt_eit_estado" runat="server" Text='<%# Bind("Estado") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_estado" runat="server" Text='<%# Bind("Estado") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Especialidad">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="txt_eit_especialidad" runat="server" Text='<%# Bind("Codigo_Especialidad_Medico") %>'></asp:TextBox>
+                        </EditItemTemplate>
+                        <ItemTemplate>
+                            <asp:Label ID="lbl_it_especialidad" runat="server" Text='<%# Bind("Especialidad") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
 

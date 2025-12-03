@@ -172,7 +172,7 @@
 
             <!-- Pie de página -->
             <footer class="menu-footer">
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-back-main" PostBackUrl="~/PaginaInicio.aspx">
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-back-main" PostBackUrl="~/MenuAdminstrador.aspx">
                     ← Volver al Menú Principal
                 </asp:LinkButton>
             </footer>

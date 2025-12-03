@@ -1,27 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Datos
 {
     internal class AccesoDatos
     {
-        const string CadenaConexion = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ClinicaMedica;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+        // Para desarrollo local: desactivar cifrado o confiar el certificado
+        private const string CadenaConexion = "Data Source=localhost\\sqlexpress;Initial Catalog=ClinicaMedica;Integrated Security=True;Encrypt=False;TrustServerCertificate=True";
+
 
         public SqlConnection ObtenerConexion()
         {
-            SqlConnection connection = new SqlConnection();
-
             try
             {
-                connection.Open();
-                return connection;
+                return new SqlConnection(CadenaConexion);
             }
-            catch 
+
+            catch
             {
                 return null;
             }
@@ -85,6 +80,7 @@ namespace Datos
             {
                 return 0;
             }
+            
 
             try
             {
@@ -100,15 +96,18 @@ namespace Datos
             }
         }
 
-
-        public SqlDataReader completarDdl(string consultaSQL)
+        public DataTable CompletarDdl(string consultaSQL)
         {
-            SqlConnection cn = ObtenerConexion();
-
-            SqlCommand sqlCommand = new SqlCommand(consultaSQL, cn);
-            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-
-            return sqlDataReader;
+            using (SqlConnection cn = ObtenerConexion())
+            {
+                cn.Open();
+                using (SqlDataAdapter da = new SqlDataAdapter(consultaSQL, cn))
+                {
+                    DataTable tabla = new DataTable();
+                    da.Fill(tabla);
+                    return tabla;
+                }
+            }
         }
 
         public DataTable CompletarGridView(string consultaSQL)
@@ -116,9 +115,7 @@ namespace Datos
             SqlConnection cn = ObtenerConexion();
             using (cn)
             {
-
-
-                SqlDataAdapter da = ObtenerAdaptador(consultaSQL,cn);
+                SqlDataAdapter da = ObtenerAdaptador(consultaSQL, cn);
                 DataTable tabla = new DataTable();
                 da.Fill(tabla);
 

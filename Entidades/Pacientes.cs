@@ -1,15 +1,8 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Diagnostics.SymbolStore;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
-     public class Pacientes
+    public class Pacientes
     {
         private string DNI_Paciente;
         private string Nombre_Paciente;
@@ -126,7 +119,7 @@ namespace Entidades
 
         public int GetIdProvincia_Paciente()
         {
-            return ID_Provincia_Paciente ;
+            return ID_Provincia_Paciente;
         }
 
         public void SetIdProvincia_Paciente(int idProvinciaP)
@@ -141,7 +134,7 @@ namespace Entidades
 
         public void SetCorreo_Paciente(string correo)
         {
-            Correo_Paciente= correo;
+            Correo_Paciente = correo;
         }
 
         public string GetTelefono_Paciente()
@@ -151,17 +144,17 @@ namespace Entidades
 
         public void SetTelefono_Paciente(string telefono)
         {
-            Telefono_Paciente= telefono;
+            Telefono_Paciente = telefono;
         }
 
-        public bool GetEstado_Paciente() 
-        { 
+        public bool GetEstado_Paciente()
+        {
             return Estado_Paciente;
         }
 
         public void SetEstado_Paciente(bool estadoP)
         {
-            Estado_Paciente =estadoP;
+            Estado_Paciente = estadoP;
         }
     }
 }

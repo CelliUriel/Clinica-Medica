@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -11,6 +7,7 @@ namespace Entidades
         private int ID_Medico;
         private int Codigo_Especialidad_Medico;
         private string Legajo_Medico;
+        private string dniMedico;
         private string Nombre_Medico;
         private string Apellido_Medico;
         private string Sexo_Medico;
@@ -21,38 +18,28 @@ namespace Entidades
         private int Id_Provincia_Medico;
         private string Correo_Medico;
         private string Telefono_Medico;
-        private DateTime DiasAtencion_Medico; 
-	    private DateTime HorarioaAtencion_Medico; 
+        private string DiasAtencion_Medico;
+        private string HorarioaAtencion_Medico;
+        private bool Estado_Medico;
+        private int ID_Usuario;
 
-        public Medicos()
+        public int GetId_Usuario_Medico()
         {
-
+            return ID_Usuario;
+        }
+        public void SetId_Usuario_Medico(int id)
+        {
+            ID_Usuario = id;
+        }
+        public int GetId_Medico()
+        {
+            return ID_Medico;
+        }
+        public void SetId_Medico(int id)
+        {
+            ID_Medico = id;
         }
 
-        public Medicos(int idMedico)
-        {
-            ID_Medico = idMedico;
-        }
-
-        public int IdMedico
-        {
-            get
-            {
-                return ID_Medico;
-            }
-            set
-            {
-                ID_Medico = value;
-            }
-        }
-        //public int GetId_Medico()
-        //{
-        //    return ID_Medico;
-        //}
-        //public void SetId_Medico(int id)
-        //{
-        //    ID_Medico = id;
-        //}
         public int GetCodigo_Especialidad_Medico()
         {
             return Codigo_Especialidad_Medico;
@@ -65,6 +52,7 @@ namespace Entidades
         {
             return Legajo_Medico;
         }
+
         public void SetLegajo_Medico(string LegajoM)
         {
             Legajo_Medico = LegajoM;
@@ -73,6 +61,17 @@ namespace Entidades
         {
             return Nombre_Medico;
         }
+
+        public string GetDniMedico()
+        {
+            return dniMedico;
+        }
+
+        public void SetDniMedico(string dni)
+        {
+            dniMedico = dni;
+        }
+
         public void SetNombre_Medico(string NombreMedico)
         {
             Nombre_Medico = NombreMedico;
@@ -99,7 +98,7 @@ namespace Entidades
         }
         public void SetNacionalidad_Medico(string Nacionalidad)
         {
-             Nacionalidad_Medico=Nacionalidad;
+            Nacionalidad_Medico = Nacionalidad;
         }
         public string GetDireccion_Medico()
         {
@@ -139,31 +138,40 @@ namespace Entidades
         }
         public void SetId_Provincia_Medico(int idProvinica)
         {
-            Id_Provincia_Medico= idProvinica;
+            Id_Provincia_Medico = idProvinica;
         }
         public DateTime GetFecha_Nacimiento_Medico()
         {
-            return FechaNacimiento_Medico.Date ;
+            return FechaNacimiento_Medico.Date;
         }
         public void SetFecha_Nacimiento(DateTime fecha)
         {
             FechaNacimiento_Medico = fecha;
         }
-        public DateTime GetDiasAtencion_Medico()
+        public string GetDiasAtencion_Medico()
         {
-            return DiasAtencion_Medico.Date ;
+            return DiasAtencion_Medico;
         }
-        public void SetDiasAtencion_Medico( DateTime DiasAtencion)
+        public void SetDiasAtencion_Medico(string DiasAtencion)
         {
             DiasAtencion_Medico = DiasAtencion;
         }
-        public DateTime GetHorariosAtencion_Medico()
+        public string GetHorariosAtencion_Medico()
         {
             return HorarioaAtencion_Medico;
         }
-        public void SetHorariosAtencion_Medico(DateTime HorariosAtencion)
+        public void SetHorariosAtencion_Medico(string HorariosAtencion)
         {
             HorarioaAtencion_Medico = HorariosAtencion;
+        }
+        public bool GetEstado_Medico()
+        {
+            return Estado_Medico;
+        }
+
+        public void SetEstado_Medico(bool estadoM)
+        {
+            Estado_Medico = estadoM;
         }
     }
 }

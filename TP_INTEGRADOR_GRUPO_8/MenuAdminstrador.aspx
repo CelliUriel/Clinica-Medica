@@ -28,13 +28,11 @@
             border-radius: 16px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
-            animation: fadeIn 0.6s ease-in-out;
+            /* animation removed */
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        /* Removed fadeIn animation */
+        /* Removed @keyframes fadeIn */
 
         h1 {
             color: #0d6efd;
@@ -71,14 +69,15 @@
             border-radius: 8px;
             padding: 12px;
             text-align: center;
-            transition: background-color 0.3s, transform 0.1s;
+            transition: background-color 0.3s;
             text-transform: uppercase;
             letter-spacing: 0.5px;
+            /* transform removed */
         }
 
         .menu-button:hover {
             background-color: #0a58ca;
-            transform: scale(1.03);
+            /* removed transform: scale */
         }
 
         footer {
@@ -117,21 +116,17 @@
                     ABML Médicos
                 </asp:LinkButton>
 
-                <asp:LinkButton ID="lnkBtnCrearUsuario" runat="server" CssClass="menu-button">
-                    Crear Usuario Médico
-                </asp:LinkButton>
-
-                <asp:LinkButton ID="lnkbtnAsignacionT" runat="server" CssClass="menu-button">
+                <asp:LinkButton ID="lnkbtnAsignacionT" runat="server" CssClass="menu-button" PostBackUrl="~/AsignacionDeTurnos.aspx">
                     Asignación de Turnos
                 </asp:LinkButton>
 
-                <asp:LinkButton ID="lnkbtnInformes" runat="server" CssClass="menu-button">
+                <asp:LinkButton ID="lnkbtnInformes" runat="server" CssClass="menu-button" PostBackUrl="~/InformeMenu.aspx">
                     Informes
                 </asp:LinkButton>
             </div>
 
             <footer>
-                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="footer-link" PostBackUrl="~/Login.aspx">
+                <asp:LinkButton ID="lnkVolver" runat="server" CssClass="footer-link" PostBackUrl="~/Inicio.aspx">
                     ← Cerrar sesión
                 </asp:LinkButton>
             </footer>

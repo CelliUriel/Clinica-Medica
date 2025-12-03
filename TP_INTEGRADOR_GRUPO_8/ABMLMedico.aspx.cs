@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Entidades;
+﻿using Entidades;
 using Negocio;
+using System;
+using System.Web.UI.WebControls;
 
 
 namespace TP_INTEGRADOR_GRUPO_8
@@ -16,7 +12,11 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                lblNombre.Text = usuario.getNombre_usuario().ToString();
+            }
             if (!IsPostBack)
             {
                 CargarGridMedicos();
@@ -32,19 +32,19 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         protected void gvMedicosBaja_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-           
+
         }
 
         // 2. MÉTODO PARA MANEJAR LA PAGINACIÓN (OnPageIndexChanging)
         protected void gvMedicosBaja_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-          
+
         }
 
-        
+
         protected void gvMedicosBaja_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
@@ -54,16 +54,19 @@ namespace TP_INTEGRADOR_GRUPO_8
             {
                 gvMedicosBaja.DataSource = negocio.BuscarPorDNI(dni);
                 gvMedicosBaja.DataBind();
+                tbxFiltrar.Text = string.Empty;
             }
             else
             {
+
                 CargarGridMedicos();
             }
         }
 
-        protected void gvMedicosBaja_SelectedIndexChanged1(object sender, EventArgs e)
+        protected void gvMedicosBaja_RowEditing(object sender, GridViewEditEventArgs e)
         {
-
+            gvMedicosBaja.EditIndex = e.NewEditIndex;
+            CargarGridMedicos();
         }
     }
 }

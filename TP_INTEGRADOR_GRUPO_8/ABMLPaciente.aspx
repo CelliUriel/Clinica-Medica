@@ -168,7 +168,7 @@
                     <label for="<%= tbxFiltro.ClientID %>">Buscar Paciente (DNI / Nombre):</label>
                     <asp:TextBox ID="tbxFiltro" runat="server" CssClass="text-control"></asp:TextBox>
                 </div>
-                <asp:Button ID="btnFiltrarPaciente" runat="server" Text="Buscar" CssClass="btn-action-primary" />
+                <asp:Button ID="btnFiltrarPaciente" runat="server" Text="Buscar" CssClass="btn-action-primary" OnClick="btnFiltrarPaciente_Click" />
             </div>
 
             <hr />
@@ -177,17 +177,17 @@
             <h3 style="color:#0d6efd; margin-bottom: 10px;">Listado de Pacientes</h3>
             <asp:GridView ID="gvPacientesBaja" runat="server"
                 AutoGenerateColumns="False"
-                DataKeyNames="DNI_Pacientes"
+                DataKeyNames="DNI"
                 AllowPaging="True"
                 EmptyDataText="No se encontraron pacientes registrados."
                 CssClass="gridview-style">
 
                 <Columns>
-                    <asp:BoundField DataField="DNI_Pacientes" HeaderText="DNI" />
-                    <asp:BoundField DataField="Nombre_Pacientes" HeaderText="Nombre" />
-                    <asp:BoundField DataField="Apellido_Pacientes" HeaderText="Apellido" />
-                    <asp:BoundField DataField="Telefono_Pacientes" HeaderText="Teléfono" />
-                    <asp:BoundField DataField="BajaLogica_Pacientes" HeaderText="Estado (0 = Activo)" />
+                    <asp:BoundField DataField="DNI" HeaderText="DNI" />
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    <asp:BoundField DataField="Apellido" HeaderText="Apellido" />
+                    <asp:BoundField DataField="Telefono" HeaderText="Teléfono" />
+                    <asp:BoundField DataField="Estado" HeaderText="Estado (0 = Activo)" />
                 </Columns>
             </asp:GridView>
 

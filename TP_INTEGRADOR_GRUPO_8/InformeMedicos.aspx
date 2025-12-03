@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="action-row">
-                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" />
+                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" OnClick="BtnGenerarInforme_Click" />
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
 
             <!-- Pie de página -->
             <footer class="card-footer">
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformesMenu.aspx">
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformeMenu.aspx">
                     ← Volver al Menú de Informes
                 </asp:LinkButton>
             </footer>
