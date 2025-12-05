@@ -93,9 +93,12 @@ namespace Datos
 
         public int TotalTurnosPresentes(DateTime desde, DateTime hasta)
         {
-            string consultaSql = "SELECT COUNT (ID_Turno) FROM Turnos JOIN Pacientes" +
-                                 "ON DNI_Paciente = DNI_Paciente_Turno WHERE Fecha_Turno" +
-                                 "BETWEEN @Desde AND @Hasta AND Estado_Turno = 'Presente' ";
+            string consultaSql =
+        "SELECT COUNT(ID_Turno) " +
+        "FROM Turnos " +
+        "JOIN Pacientes ON Pacientes.DNI_Paciente = Turnos.DNI_Paciente_Turno " +
+        "WHERE Fecha_Turno BETWEEN @Desde AND @Hasta " +
+        "AND Estado_Turno = 'Presente'";
 
             conexion.Open();
             SqlCommand comandoSQL = new SqlCommand(consultaSql, conexion);
@@ -110,9 +113,12 @@ namespace Datos
 
         public int TotalTurnosAusentes(DateTime desde, DateTime hasta)
         {
-            string consultaSql = "SELECT COUNT (ID_Turno) FROM Turnos JOIN Pacientes" +
-                                 "ON DNI_Paciente = DNI_Paciente_Turno WHERE Fecha_Turno" +
-                                 "BETWEEN @Desde AND @Hasta AND Estado_Turno = 'Ausente' ";
+            string consultaSql =
+         "SELECT COUNT(ID_Turno) " +
+         "FROM Turnos " +
+         "JOIN Pacientes ON Pacientes.DNI_Paciente = Turnos.DNI_Paciente_Turno " +
+         "WHERE Fecha_Turno BETWEEN @Desde AND @Hasta " +
+         "AND Estado_Turno = 'Ausente'";
 
             conexion.Open();
             SqlCommand comandoSQL = new SqlCommand(consultaSql, conexion);

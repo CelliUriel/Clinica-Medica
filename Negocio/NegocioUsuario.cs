@@ -25,7 +25,7 @@ namespace Negocio
         public int CrearUsuarioYDevolverID(Usuario usuario)
         {
             DaoUsuarios daoUsuario = new DaoUsuarios();
-            return daoUsuario.Inserter(usuario);
+            return daoUsuario.InsertarUsuarioYDevolverID(usuario);
         }
 
         public int ValidarLogin(string usuario, string pass)

@@ -279,5 +279,37 @@ namespace Datos
             AccesoDatos ds = new AccesoDatos();
             return ds.ObtenerTabla("Medicos", cmd);
         }
+
+        public DataTable InformeMedicosPorTurnos(DateTime fechaDesde, DateTime fechaHasta)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            string sql = @"
+        SELECT 
+            M.ID_Medico,
+            M.Nombre_Medico,
+            M.Apellido_Medico,
+            E.Nombre_Especialidad,
+            COUNT(T.ID_Turno) AS CantidadTurnos
+        FROM Medicos M
+        LEFT JOIN Turnos T ON M.ID_Medico = T.Id_Medico_Turno
+               AND T.Fecha_Turno BETWEEN @FechaDesde AND @FechaHasta
+        LEFT JOIN Especialidades E 
+               ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad
+        WHERE M.Estado_Medico = 1
+        GROUP BY 
+            M.ID_Medico,
+            M.Nombre_Medico,
+            M.Apellido_Medico,
+            E.Nombre_Especialidad
+        ORDER BY CantidadTurnos DESC;
+    ";
+
+            SqlCommand cmd = new SqlCommand(sql);
+            cmd.Parameters.AddWithValue("@FechaDesde", fechaDesde);
+            cmd.Parameters.AddWithValue("@FechaHasta", fechaHasta);
+
+            return datos.ObtenerTabla("InformeMedicos", cmd);
+        }
     }
 }

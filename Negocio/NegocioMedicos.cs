@@ -1,5 +1,6 @@
 ﻿using Datos;
 using Entidades;
+using System;
 using System.Data;
 using System.Web.UI.WebControls;
 
@@ -56,6 +57,11 @@ namespace Negocio
         public void CompletarDdlPacientes(DropDownList ddlPacientes)
         {
             daoMedicos.CompletarDdlPacientes(ddlPacientes);
+        }
+        public DataTable ObtenerInformeMedicos(DateTime desde, DateTime hasta)
+        {
+            DaoMedicos dao = new DaoMedicos();
+            return dao.InformeMedicosPorTurnos(desde, hasta);
         }
 
     }
