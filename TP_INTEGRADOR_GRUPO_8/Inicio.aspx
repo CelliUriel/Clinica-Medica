@@ -130,7 +130,7 @@
                 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             </div>
 
-            <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" CssClass="btn-action-primary" OnClick="btnIniciarSesion_Click" />
+            <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" CssClass="btn-action-primary" OnClick="BtnIniciarSesion_Click" />
 
             
         </div>

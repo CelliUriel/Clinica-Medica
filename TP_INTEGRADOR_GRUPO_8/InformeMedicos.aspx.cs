@@ -8,5 +8,10 @@ namespace TP_INTEGRADOR_GRUPO_8
         {
 
         }
+
+        protected void BtnGenerarInforme_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

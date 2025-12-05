@@ -73,8 +73,6 @@ CREATE TABLE Medicos(
 GO
 
 
-
-
 CREATE TABLE Pacientes(
 	DNI_Paciente CHAR(8) NOT NULL,
 	Nombre_Paciente VARCHAR(50) NOT NULL,

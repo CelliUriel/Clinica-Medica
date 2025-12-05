@@ -10,9 +10,9 @@ namespace Negocio
 {
     public class NegocioUsuario
     {
-        DaoUsuarios daoUsuario = new DaoUsuarios();
+        readonly DaoUsuarios daoUsuario = new DaoUsuarios();
 
-        public bool guardarUsuario(Usuario usuario)
+        public bool GuardarUsuario(Usuario usuario)
         {
             return daoUsuario.InsertarUsuario(usuario);
         }
@@ -25,9 +25,18 @@ namespace Negocio
         public int CrearUsuarioYDevolverID(Usuario usuario)
         {
             DaoUsuarios daoUsuario = new DaoUsuarios();
-            return daoUsuario.InsertarUsuarioYDevolverID(usuario);
+            return daoUsuario.Inserter(usuario);
         }
 
+        public int ValidarLogin(string usuario, string pass)
+        {
+            if (!daoUsuario.ExisteUsuario(usuario))
+                return 0; // Usuario inexistente
 
+            if (!daoUsuario.ContraseniaCorrectaLogin(usuario, pass))
+                return 1; // Contraseña incorrecta
+
+            return 2; // Todo correcto
+        }
     }
 }

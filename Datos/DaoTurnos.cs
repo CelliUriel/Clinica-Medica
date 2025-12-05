@@ -1,6 +1,9 @@
 ﻿using Entidades;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Reflection.Emit;
+using System.Text.RegularExpressions;
 
 namespace Datos
 {
@@ -13,7 +16,7 @@ namespace Datos
         public int InsertarTurno(Turnos turno)
         {
             string consulta = "INSERT INTO Turnos " +
-                "(DNI_Paciente_Turno, Id_Medico_Turno, Codigo_Especialidad_Turno, Fecha_Turno, Hora_Turno, Estado_Turno, Observacion_Turno) " + "VALUES (@dni, @medico, @especialidad, @fecha, @hora, @estado, @obs)";
+                              "(DNI_Paciente_Turno, Id_Medico_Turno, Codigo_Especialidad_Turno, Fecha_Turno, Hora_Turno, Estado_Turno, Observacion_Turno) " + "VALUES (@dni, @medico, @especialidad, @fecha, @hora, @estado, @obs)";
 
             SqlConnection cn = ds.ObtenerConexion();
             cn.Open();
@@ -48,6 +51,78 @@ namespace Datos
                 "ORDER BY T.Fecha_Turno, T.Hora_Turno";
 
             return ds.ObtenerTabla(consultaSQL);
+        }
+
+        public DataTable ListarTurnoPorFechaPresentes(DateTime desde, DateTime hasta)
+        {
+            string consultaSQL = "SELECT Nombre_Paciente + ' ' + Apellido_Paciente AS 'Nombre completo'," +
+                                 "DNI_Paciente, Fecha_Turno FROM Turnos JOIN Pacientes ON DNI_Paciente = " +
+                                 $"DNI_Paciente_Turno WHERE Fecha_Turno BETWEEN @Desde AND @Hasta " +
+                                 "AND Estado_Turno = 'Presente'";
+
+            conexion.Open();
+            SqlCommand comandoSQL = new SqlCommand(consultaSQL, conexion);
+            comandoSQL.Parameters.AddWithValue("@Desde", desde);
+            comandoSQL.Parameters.AddWithValue("@Hasta", hasta);
+            DataTable tabla = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(comandoSQL);
+            adapter.Fill(tabla);
+            conexion.Close();
+
+            return tabla;
+        }
+
+        public DataTable ListarTurnoPorFechaAusentes(DateTime desde, DateTime hasta)
+        {
+            string consultaSQL = "SELECT Nombre_Paciente + ' ' + Apellido_Paciente AS 'Nombre completo'," +
+                                 "DNI_Paciente, Fecha_Turno FROM Turnos JOIN Pacientes ON DNI_Paciente = " +
+                                 $"DNI_Paciente_Turno WHERE Fecha_Turno BETWEEN @Desde AND @Hasta " +
+                                 "AND Estado_Turno = 'Ausente'";
+
+            conexion.Open();
+            SqlCommand comandoSQL = new SqlCommand(consultaSQL, conexion);
+            comandoSQL.Parameters.AddWithValue("@Desde", desde);
+            comandoSQL.Parameters.AddWithValue("@Hasta", hasta);
+            DataTable tabla = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(comandoSQL);
+            adapter.Fill(tabla);
+            conexion.Close();
+
+            return tabla;
+        }
+
+        public int TotalTurnosPresentes(DateTime desde, DateTime hasta)
+        {
+            string consultaSql = "SELECT COUNT (ID_Turno) FROM Turnos JOIN Pacientes" +
+                                 "ON DNI_Paciente = DNI_Paciente_Turno WHERE Fecha_Turno" +
+                                 "BETWEEN @Desde AND @Hasta AND Estado_Turno = 'Presente' ";
+
+            conexion.Open();
+            SqlCommand comandoSQL = new SqlCommand(consultaSql, conexion);
+            comandoSQL.Parameters.AddWithValue("@Desde", desde);
+            comandoSQL.Parameters.AddWithValue("@Hasta", hasta);
+
+            int total = Convert.ToInt32(comandoSQL.ExecuteScalar());
+            conexion.Close();
+
+            return total;
+        }
+
+        public int TotalTurnosAusentes(DateTime desde, DateTime hasta)
+        {
+            string consultaSql = "SELECT COUNT (ID_Turno) FROM Turnos JOIN Pacientes" +
+                                 "ON DNI_Paciente = DNI_Paciente_Turno WHERE Fecha_Turno" +
+                                 "BETWEEN @Desde AND @Hasta AND Estado_Turno = 'Ausente' ";
+
+            conexion.Open();
+            SqlCommand comandoSQL = new SqlCommand(consultaSql, conexion);
+            comandoSQL.Parameters.AddWithValue("@Desde", desde);
+            comandoSQL.Parameters.AddWithValue("@Hasta", hasta);
+
+            int total = Convert.ToInt32(comandoSQL.ExecuteScalar());
+            conexion.Close();
+
+            return total;
         }
     }
 }

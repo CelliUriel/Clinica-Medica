@@ -96,7 +96,6 @@ namespace Datos
             }
         }
 
-
         public DataTable CompletarDdl(string consultaSQL)
         {
             using (SqlConnection cn = ObtenerConexion())
@@ -123,8 +122,6 @@ namespace Datos
                 return tabla;
             }
         }
-
-       
     }
 }
 

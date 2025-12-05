@@ -11,32 +11,37 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         }
 
-        protected void btnIniciarSesion_Click(object sender, EventArgs e)
+        protected void BtnIniciarSesion_Click(object sender, EventArgs e)
         {
             string nombre = tbNombreDeUsuario.Text.Trim();
             string pass = tbContraseniaDeUsuario.Text.Trim();
 
             NegocioUsuario negocio = new NegocioUsuario();
 
-            Usuario u = negocio.IniciarSesion(nombre, pass);
+            int estado = negocio.ValidarLogin(nombre, pass);
 
-            if (u == null)
+            if (estado == 0)
             {
-                lblMensaje.Text = "Usuario o contraseña incorrectos.";
+                lblMensaje.Text = "Usuario inexistente";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
                 return;
             }
 
+            if (estado == 1)
+            {
+                lblMensaje.Text = "Contraseña incorrecta";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+                return;
+            }
+
+            Usuario u = negocio.IniciarSesion(nombre, pass);
+
             Session["Usuario"] = u;
 
-            if (u.getRol())    
-            {
+            if (u.getRol())
                 Response.Redirect("~/MenuAdminstrador.aspx");
-            }
-            if (u.getRol()== false)
-            {
+            else
                 Response.Redirect("~/PanelMedico.aspx");
-            }
-
         }
-    }
+    }        
 }

@@ -135,18 +135,21 @@
                     <label for="<%= tbxDNI.ClientID %>">DNI</label>
                     <asp:TextBox ID="tbxDNI" runat="server" CssClass="text-control" MaxLength="8"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbxDNI" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tbxDNI" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^\d+$">Ingrese solo numeros sin espacio</asp:RegularExpressionValidator>
                 </div>
 
                 <div class="form-group">
                     <label for="<%= tbxNombre.ClientID %>">Nombre</label>
                     <asp:TextBox ID="tbxNombre" runat="server" CssClass="text-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbxNombre" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbxNombre" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^[A-Za-z]+$">Ingrese solo letras sin espacio</asp:RegularExpressionValidator>
                 </div>
 
                 <div class="form-group">
                     <label for="<%= tbxApellido.ClientID %>">Apellido</label>
                     <asp:TextBox ID="tbxApellido" runat="server" CssClass="text-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbxApellido" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbxApellido" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^[A-Za-z]+$">Ingrese solo letras sin espacio</asp:RegularExpressionValidator>
                 </div>
 
                 <div class="form-group">
@@ -164,6 +167,7 @@
                     <label for="<%= tbxNacionalidad.ClientID %>">Nacionalidad</label>
                     <asp:TextBox ID="tbxNacionalidad" runat="server" CssClass="text-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="tbxNacionalidad" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tbxNacionalidad" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^[A-Za-z]+$">Ingrese solo letras sin espacio</asp:RegularExpressionValidator>
                 </div>
 
                 <div class="form-group">
@@ -198,12 +202,14 @@
                     <label for="<%= tbxCorreo.ClientID %>">Correo Electrónico</label>
                     <asp:TextBox ID="tbxCorreo" runat="server" CssClass="text-control" TextMode="Email"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="tbxCorreo" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="tbxCorreo" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^\S+$">Ingrese sin espacios</asp:RegularExpressionValidator>
                 </div>
 
                 <div class="form-group">
                     <label for="<%= tbxTelefono.ClientID %>">Teléfono</label>
                     <asp:TextBox ID="tbxTelefono" runat="server" CssClass="text-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="tbxTelefono" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="tbxTelefono" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^\d+$">Ingrese solo numeros sin espacio</asp:RegularExpressionValidator>
                 </div>
             </div>
 
