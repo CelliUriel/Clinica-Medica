@@ -69,6 +69,15 @@ namespace TP_INTEGRADOR_GRUPO_8
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMedicosDDL;
 
         /// <summary>
+        /// Control lblDYH.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDYH;
+
+        /// <summary>
         /// Control ddlPaciente.
         /// </summary>
         /// <remarks>

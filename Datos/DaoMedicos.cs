@@ -11,44 +11,22 @@ namespace Datos
         static readonly AccesoDatos ds = new AccesoDatos();
         readonly SqlConnection conexion = ds.ObtenerConexion();
         SqlParameter SqlParametros = new SqlParameter();
+        BaseDao BaseDao = new BaseDao();
 
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
-            ddlProvincia.Items.Clear();
-            ddlProvincia.Items.Add(new ListItem("---Seleccionar---", "0"));
-
-            DataTable tabla = new AccesoDatos().CompletarDdl("SELECT * FROM Provincias ORDER BY Descripcion_Provincia");
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                ddlProvincia.Items.Add(new ListItem(fila["Descripcion_Provincia"].ToString(), fila["ID_Provincia"].ToString()));
-            }
+            BaseDao.CompletarDdlProvincias(ddlProvincia);
         }
 
         public void CompletarDdlLocalidades(DropDownList ddlLocalidad, int idProvincia)
         {
-            ddlLocalidad.Items.Clear();
-            ddlLocalidad.Items.Add(new ListItem("---Seleccionar---", "0"));
-
-            if (idProvincia == 0) return;
-
-            DataTable tabla = new AccesoDatos().CompletarDdl(
-                $"SELECT * FROM Localidades WHERE ID_Provincia_Localidad = {idProvincia} ORDER BY Descripcion_Localidad"
-            );
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                ddlLocalidad.Items.Add(
-                    new ListItem(fila["Descripcion_Localidad"].ToString(), fila["ID_Localidad"].ToString())
-                );
-            }
+            
+            BaseDao.CompletarDdlLocalidades(ddlLocalidad, idProvincia);
         }
 
         public void CompletarDdlSexo(DropDownList ddlSexo)
         {
-            ddlSexo.Items.Add(new ListItem("Masculino", "Masculino"));
-            ddlSexo.Items.Add(new ListItem("Femenino", "Femenino"));
-            ddlSexo.Items.Add(new ListItem("Otro", "Otro"));
+            BaseDao.CompletarDdlSexo(ddlSexo);
         }
 
         public void CompletarDdlEspecialidades(DropDownList ddlEspecialidad)
@@ -158,7 +136,7 @@ namespace Datos
                         cmd.Parameters.AddWithValue("@Telefono", medico.GetTelefono_Medico());
                         cmd.Parameters.AddWithValue("@DiasAtencion", medico.GetDiasAtencion_Medico());
                         cmd.Parameters.AddWithValue("@Horario", medico.GetHorariosAtencion_Medico());
-                        cmd.Parameters.AddWithValue("@Estado",medico.GetEstado_Medico());
+                        cmd.Parameters.AddWithValue("@Estado", medico.GetEstado_Medico());
                         var idUsuario = medico.GetId_Usuario_Medico();
 
                         if (idUsuario <= 0)
@@ -170,9 +148,9 @@ namespace Datos
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                return false;
+                throw new Exception("error en medico.", ex);
             }
         }
 
@@ -186,99 +164,123 @@ namespace Datos
         {
             string consultaSQL =
                 "SELECT " +
+                "M.ID_Medico AS ID, " +
                 "M.DNI_MEDICO AS DNI, " +
                 "M.Nombre_Medico AS Nombre, " +
                 "M.Apellido_Medico AS Apellido, " +
+                "M.Sexo_Medico AS Sexo, " +
+                "M.Nacionalidad_Medico AS Nacionalidad, " +
+                "CONVERT(VARCHAR(10), M.FechaNacimiento_Medico, 103) AS FechaNacimiento, " +
+                "M.Direccion_Medico AS Direccion, " +
+                "L.ID_Localidad AS ID_Localidad, " +
+                "L.Descripcion_Localidad AS Localidad, " +
+                "P.ID_Provincia AS ID_Provincia, " +
+                "P.Descripcion_Provincia AS Provincia, " +
+                "M.Codigo_Especialidad_Medico AS ID_Especialidad, " +
+                "E.Nombre_Especialidad AS Especialidad, " +
+                "M.Correo_Medico AS Correo, " +
                 "M.Telefono_Medico AS Telefono, " +
-                "M.Estado_Medico AS Estado, " +
-                "E.Nombre_Especialidad AS Especialidad " +
+                "M.DiasAtencion_Medico AS DiasAtencion, " +
+                "M.HorariosAtencion_Medico AS HorarioAtencion, " +
+                "M.Estado_Medico AS Estado " +
                 "FROM Medicos M " +
-                "JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad";
+                "JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad " +
+                "JOIN Localidades L ON M.ID_Localidad_Medico = L.ID_Localidad " +
+                "JOIN Provincias P ON M.ID_Provincia_Medico = P.ID_Provincia " +
+                "WHERE M.Estado_Medico = 1";
 
             return ds.ObtenerTabla(consultaSQL);
         }
+
+
+
 
         public DataTable FiltrarMedicoPorDNI(int dniMedico)
         {
-            string consultaSQL =
-                "SELECT " +
-                "M.DNI_MEDICO AS DNI, " +
-                "M.Nombre_Medico AS Nombre, " +
-                "M.Apellido_Medico AS Apellido, " +
-                "M.Telefono_Medico AS Telefono, " +
-                "M.Estado_Medico AS Estado " +
-                "E.Nombre_Especialidad AS Especialidad" +
-                "FROM Medicos M INNER JOIN Especialidades E ON M.Codigo_Especialidad_Medico=E.Codigo_Especialidad" +
-                $"WHERE M.DNI_MEDICO = {dniMedico}";
-
-            return ds.ObtenerTabla(consultaSQL);
-        }
-
-       /* public DataTable FiltrarMedicoPorID(string id)
-        {
+          
             string consultaSQL =
                  "SELECT " +
-                 "M.ID_MEDICO AS ID, " +
-                "M.DNI_MEDICO AS DNI, " +
-                "M.Nombre_Medico AS Nombre, " +
-                "M.Apellido_Medico AS Apellido, " +
-                "M.Telefono_Medico AS Telefono, " +
-                "M.Estado_Medico AS Estado, " +
-                "E.Nombre_Especialidad AS Especialidad" +
-                "FROM Medicos M INNER JOIN Especialidades E ON M.Codigo_Especialidad_Medico=E.Codigo_Especialidad" +
-                $"WHERE M.ID_MEDICO = {id}";
-
-
+                 "M.ID_Medico AS ID, " +
+                 "M.DNI_MEDICO AS DNI, " +
+                 "M.Nombre_Medico AS Nombre, " +
+                 "M.Apellido_Medico AS Apellido, " +
+                 "M.Sexo_Medico AS Sexo, " +
+                 "M.Nacionalidad_Medico AS Nacionalidad, " +
+                 "CONVERT(VARCHAR(10), M.FechaNacimiento_Medico, 103) AS FechaNacimiento, " +
+                 "M.Direccion_Medico AS Direccion, " +
+                 "L.ID_Localidad AS ID_Localidad, " +
+                 "L.Descripcion_Localidad AS Localidad, " +
+                 "P.ID_Provincia AS ID_Provincia, " +
+                 "P.Descripcion_Provincia AS Provincia, " +
+                 "M.Codigo_Especialidad_Medico AS ID_Especialidad, " +
+                 "E.Nombre_Especialidad AS Especialidad, " +
+                 "M.Correo_Medico AS Correo, " +
+                 "M.Telefono_Medico AS Telefono, " +
+                 "M.DiasAtencion_Medico AS DiasAtencion, " +
+                 "M.HorariosAtencion_Medico AS HorarioAtencion, " +
+                 "M.Estado_Medico AS Estado " +
+                 "FROM Medicos M " +
+                 "JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad " +
+                 "JOIN Localidades L ON M.ID_Localidad_Medico = L.ID_Localidad " +
+                 "JOIN Provincias P ON M.ID_Provincia_Medico = P.ID_Provincia " +
+                 $"WHERE M.DNI_MEDICO={dniMedico} AND M.Estado_Medico = 1 ";
 
             return ds.ObtenerTabla(consultaSQL);
-        }*/
-
-        private void ArmarParametrosEliminarMedico(ref SqlCommand Comando, Medicos medico)
-        {
-            SqlParametros = Comando.Parameters.Add("@IdMedico", SqlDbType.Int);
-            SqlParametros.Value = medico.GetId_Medico();
         }
 
         public bool EliminarMedico(Medicos medico)
         {
-            AccesoDatos accesoDatos = new AccesoDatos();
-
-            SqlCommand sqlCommand = new SqlCommand();
-
-            ArmarParametrosEliminarMedico(ref sqlCommand, medico);
-
-            int FilasInsertadas = accesoDatos.EjecutarComando("UPDATE Medicos SET Estado_Medico=0 WHERE ID_Medico = @IdMedico");
-            if (FilasInsertadas == 1)
+            using (SqlConnection cn = ds.ObtenerConexion())
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                cn.Open();
+                string consulta = "UPDATE Medicos SET Estado_Medico = 0 WHERE ID_Medico = @IdMedico";
+                using (SqlCommand cmd = new SqlCommand(consulta, cn))
+                {
+                    cmd.Parameters.AddWithValue("@IdMedico", medico.GetId_Medico());
+                    int filas = cmd.ExecuteNonQuery();
+                    return filas > 0;
+                }
             }
         }
+
+
+
 
         public DataTable BuscarMedicoPorDNI(string dni)
         {
-           // string consulta = "SELECT * FROM Medicos WHERE DNI_MEDICO AS DNI = @dni";
-
-
-            string consulta =
-            "SELECT " +
-            "DNI_MEDICO AS DNI , " +
-            "Nombre_Medico AS Nombre, " +
-            "Apellido_Medico AS Apellido, " +
-            "Telefono_Medico AS  Telefono, " +
-            "Estado_Medico AS Estado, " +
-            "Codigo_Especialidad_Medico  " +
-            "FROM Medicos WHERE DNI_MEDICO  = @dni";
-
-            SqlCommand cmd = new SqlCommand(consulta);
-            cmd.Parameters.AddWithValue("@dni", dni);
-
-            AccesoDatos ds = new AccesoDatos();
-            return ds.ObtenerTabla("Medicos", cmd);
-        }
+           
+                string consulta =
+                 "SELECT " +
+                 "M.ID_Medico AS ID, " +
+                 "M.DNI_MEDICO AS DNI, " +
+                 "M.Nombre_Medico AS Nombre, " +
+                 "M.Apellido_Medico AS Apellido, " +
+                 "M.Sexo_Medico AS Sexo, " +
+                 "M.Nacionalidad_Medico AS Nacionalidad, " +
+                 "CONVERT(VARCHAR(10), M.FechaNacimiento_Medico, 103) AS FechaNacimiento, " +
+                 "M.Direccion_Medico AS Direccion, " +
+                 "L.ID_Localidad AS ID_Localidad, " +
+                 "L.Descripcion_Localidad AS Localidad, " +
+                 "P.ID_Provincia AS ID_Provincia, " +
+                 "P.Descripcion_Provincia AS Provincia, " +
+                 "M.Codigo_Especialidad_Medico AS ID_Especialidad, " +
+                 "E.Nombre_Especialidad AS Especialidad, " +
+                 "M.Correo_Medico AS Correo, " +
+                 "M.Telefono_Medico AS Telefono, " +
+                 "M.DiasAtencion_Medico AS DiasAtencion, " +
+                 "M.HorariosAtencion_Medico AS HorarioAtencion, " +
+                 "M.Estado_Medico AS Estado " +
+                 "FROM Medicos M " +
+                 "JOIN Especialidades E ON M.Codigo_Especialidad_Medico = E.Codigo_Especialidad " +
+                 "JOIN Localidades L ON M.ID_Localidad_Medico = L.ID_Localidad " +
+                 "JOIN Provincias P ON M.ID_Provincia_Medico = P.ID_Provincia " +
+                 "WHERE RTRIM(M.DNI_MEDICO) LIKE @dni " + "AND M.Estado_Medico = 1";
+                  SqlCommand cmd = new SqlCommand(consulta);
+                  cmd.Parameters.AddWithValue("@dni","%" + dni + "%");
+            
+                  AccesoDatos ds = new AccesoDatos();
+                  return ds.ObtenerTabla("Medicos", cmd);
+                }
 
         public DataTable InformeMedicosPorTurnos(DateTime fechaDesde, DateTime fechaHasta)
         {
@@ -311,5 +313,108 @@ namespace Datos
 
             return datos.ObtenerTabla("InformeMedicos", cmd);
         }
+
+        public Medicos DiasHorarios(int id)
+        {
+
+            Medicos medicos = new Medicos();
+            SqlConnection conn = ds.ObtenerConexion();
+            conn.Open();
+
+            string Query = "SELECT DiasAtencion_Medico, HorariosAtencion_Medico FROM Medicos WHERE ID_Medico=@id";
+
+            SqlCommand cmd = new SqlCommand(Query);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Connection = conn;
+
+            SqlDataReader dataReader = cmd.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+
+                medicos.SetDiasAtencion_Medico(dataReader["DiasAtencion_Medico"].ToString());
+                medicos.SetHorariosAtencion_Medico(dataReader["HorariosAtencion_Medico"].ToString());
+
+            }
+            conn.Close();
+            return medicos;
+
+        }
+   
+  
+
+        public void ActualizarMedico(Medicos m)
+        {
+            using (SqlConnection conn = new SqlConnection(conexion.ConnectionString))
+            {
+                string sql = @"UPDATE Medicos SET 
+                        Nombre_Medico = @Nombre,
+                        Apellido_Medico = @Apellido,
+                        Sexo_Medico = @Sexo,
+                        Nacionalidad_Medico = @Nacionalidad,
+                        ID_Provincia_Medico = @IdProvincia,
+                        ID_Localidad_Medico = @IdLocalidad,
+                        Direccion_Medico = @Direccion,
+                        Correo_Medico = @Correo,
+                        Telefono_Medico = @Telefono,
+                        DiasAtencion_Medico = @DiasAtencion,
+                        HorariosAtencion_Medico = @HorarioAtencion,
+                        Codigo_Especialidad_Medico = @CodigoEspecialidad,
+                        Estado_Medico = @Estado
+                        WHERE DNI_MEDICO = @DNI";
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@DNI", m.GetDniMedico());
+                cmd.Parameters.AddWithValue("@Nombre", m.GetNombre_Medico());
+                cmd.Parameters.AddWithValue("@Apellido", m.GetApellido_Medico());
+                cmd.Parameters.AddWithValue("@Sexo", m.GetSexo_Medico());
+                cmd.Parameters.AddWithValue("@Nacionalidad", m.GetNacionalidad_Medico());
+                cmd.Parameters.AddWithValue("@IdProvincia", m.GetId_Provincia_Medico());
+                cmd.Parameters.AddWithValue("@IdLocalidad", m.GetId_Localidad_Medico());
+                cmd.Parameters.AddWithValue("@Direccion", m.GetDireccion_Medico());
+                cmd.Parameters.AddWithValue("@Correo", m.GetCorreo_Medico());
+                cmd.Parameters.AddWithValue("@Telefono", m.GetTelefono_Medico());
+                cmd.Parameters.AddWithValue("@DiasAtencion", m.GetDiasAtencion_Medico());
+                cmd.Parameters.AddWithValue("@HorarioAtencion", m.GetHorariosAtencion_Medico());
+                cmd.Parameters.AddWithValue("@CodigoEspecialidad", m.GetCodigo_Especialidad_Medico());
+                cmd.Parameters.AddWithValue("@Estado", m.GetEstado_Medico());
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+
+        public int AltaLogica(string dni)
+        {
+            using (SqlConnection conn = ds.ObtenerConexion())
+            {
+                conn.Open();
+
+                string query = "UPDATE Medicos SET Estado_Medico=@Estado WHERE DNI_MEDICO=@dni AND Estado_Medico=0";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Estado", 1);
+                cmd.Parameters.AddWithValue("@dni", dni);
+                int filas = cmd.ExecuteNonQuery();
+                conn.Close();
+                return filas;
+
+            }
+        }
+
+        public bool ExisteDniMedico(string dni)
+        {
+            using (SqlConnection cn = ds.ObtenerConexion())
+            {
+                cn.Open();
+                string sql = "SELECT COUNT(*) FROM Medicos WHERE DNI_MEDICO = @dni";
+                SqlCommand cmd = new SqlCommand(sql, cn);
+                cmd.Parameters.AddWithValue("@dni", dni);
+
+                int cantidad = (int)cmd.ExecuteScalar();
+                return cantidad > 0;
+            }
+        }
     }
+
 }

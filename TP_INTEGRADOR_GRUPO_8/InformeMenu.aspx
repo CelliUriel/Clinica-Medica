@@ -155,7 +155,7 @@
             <section class="menu-options">
                 <div class="menu-item">
                     <h3>Informe de Médicos con Mayor Cantidad de Turnos</h3>
-                    <p>Visualiza los médicos con más turnos en los primeros seis meses.</p>
+                    <p>Visualiza los médicos con más turnos hasta la fecha.</p>
                     <asp:LinkButton ID="lbTurnosEspecialidad" runat="server" CssClass="btn-link-action" PostBackUrl="~/InformeMedicos.aspx">
                         Ver Informe
                     </asp:LinkButton>

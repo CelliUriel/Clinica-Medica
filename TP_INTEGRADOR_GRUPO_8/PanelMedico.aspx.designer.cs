@@ -24,6 +24,15 @@ namespace TP_INTEGRADOR_GRUPO_8
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control lblUsuarioRol.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuarioRol;
+
+        /// <summary>
         /// Control btnTurnos.
         /// </summary>
         /// <remarks>

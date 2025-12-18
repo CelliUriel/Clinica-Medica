@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatos.cs" />
+    <Compile Include="BaseDao.cs" />
     <Compile Include="DaoMedicos.cs" />
     <Compile Include="DaoPacientes.cs" />
     <Compile Include="DaoUsuarios.cs" />

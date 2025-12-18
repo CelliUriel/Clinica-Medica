@@ -9,7 +9,11 @@ namespace TP_INTEGRADOR_GRUPO_8
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["Usuario"] != null)
+            {
+                Usuario usuario = (Usuario)Session["Usuario"];
+                LblNombre.Text = "Usuario logueado: "+usuario.getNombre_usuario().ToString();
+            }
         }
 
         protected void BtnGenerarInforme_Click(object sender, EventArgs e)
@@ -34,6 +38,14 @@ namespace TP_INTEGRADOR_GRUPO_8
             lblTotalTurnos.Text = pacientesTotales.ToString();
             lblPorcentajePresentes.Text = porcentajeTasaPresentismo.ToString() + "%";
             lblPorcentajeAusentes.Text = porcentajeTasaAusentismo.ToString() + "%";
+
+            LimpiarCampo();
+        }
+
+        private void LimpiarCampo()
+        {
+            tbxFechaDesde.Text = string.Empty;
+            tbxFechaHasta.Text = string.Empty;
         }
     }
 }

@@ -215,3 +215,14 @@ GO
 
 SELECT * FROM Localidades;
 GO
+
+USE ClinicaMedica
+GO
+
+ALTER TABLE Medicos
+ALTER COLUMN DiasAtencion_Medico VARCHAR(150)
+GO
+
+
+SELECT * FROM Pacientes
+GO

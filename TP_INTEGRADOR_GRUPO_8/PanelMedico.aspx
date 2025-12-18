@@ -35,7 +35,7 @@ background: #0056b3;
 <form id="form1" runat="server">
 <div class="panel-container">
 <h2>Panel del Médico</h2>
-<p>Bienvenido doctor, seleccione una opción:</p>
+ <p><asp:Label ID="lblUsuarioRol" runat="server"></asp:Label></p>
 <asp:Button ID="btnTurnos" runat="server" Text="Visualizar Turnos" CssClass="btn" PostBackUrl="~/VisualizarTurnosMedico.aspx" />
     <br />
     <br />

@@ -39,7 +39,12 @@
             font-weight: 600;
             letter-spacing: 0.5px;
         }
-
+        header h3 {
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
         .report-filter-area {
             padding: 30px;
             background-color: #fafbfd;
@@ -172,6 +177,7 @@
             
             <header>
                 <h2>📋 Informe de Asistencias de Pacientes</h2>
+                <h2><asp:Label ID="LblNombre" runat="server"></asp:Label></h2>
             </header>
             
             <div class="report-filter-area">
@@ -180,22 +186,32 @@
                         <td style="width: 50%;">
                             <label for="<%= tbxFechaDesde.ClientID %>">Desde:</label>
                             <asp:TextBox ID="tbxFechaDesde" runat="server" CssClass="text-control" TextMode="Date"></asp:TextBox>
+                            <br />
+                        <asp:RequiredFieldValidator ID="RfvFechaDesdeInformePacientes" runat="server" ControlToValidate="tbxFechaDesde" ForeColor="#3366CC">Ingrese una fecha</asp:RequiredFieldValidator>
+                            <br />
+                    <asp:RegularExpressionValidator ID="RevFechaDesdeInformePacientes" runat="server" ControlToValidate="tbxFechaDesde" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^(18[0-9]{2}|19[0-9]{2}|2[0-4][0-9]{2}|2500)-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$">Ingrese una fecha valida</asp:RegularExpressionValidator>
                         </td>
                         <td style="width: 50%;">
                             <label for="<%= tbxFechaHasta.ClientID %>">Hasta:</label>
                             <asp:TextBox ID="tbxFechaHasta" runat="server" CssClass="text-control" TextMode="Date"></asp:TextBox>
+                            <br />
+                        <asp:RequiredFieldValidator ID="RfvFechaHastaInformePacientes" runat="server" ControlToValidate="tbxFechaHasta" ForeColor="#3366CC">Ingrese una fecha</asp:RequiredFieldValidator>
+                            <br />
+                    <asp:RegularExpressionValidator ID="RevFechaHastaInformePacientes" runat="server" ControlToValidate="tbxFechaHasta" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^(18[0-9]{2}|19[0-9]{2}|2[0-4][0-9]{2}|2500)-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$">Ingrese una fecha valida</asp:RegularExpressionValidator>
                         </td>
                     </tr>
                 </table>
                 
                 <div style="text-align: center; margin-top: 25px;">
-                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" OnClick="BtnGenerarInforme_Click" />
+                    <asp:Button ID="btnGenerarInforme" runat="server" Text="Generar Informe" CssClass="btn-action-primary" OnClick="BtnGenerarInforme_Click" ValidationGroup="validacionFechas" />
+                    <br />
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tbxFechaDesde" ControlToValidate="tbxFechaHasta" ErrorMessage="Ingrese una fecha valida." ForeColor="Red" Operator="GreaterThan" Type="Date" ValidationGroup="validacionFechas"></asp:CompareValidator>
                 </div>
             </div>
             
             <hr />
 
-            <section runat="server" id="pnlResumen" Visible="false">
+            <section runat="server" id="pnlResumen" Visible="true">
                 <h3>Resumen de Asistencia Global</h3>
                 <table class="summary-table">
                     <tr>
@@ -228,7 +244,7 @@
             </section>
 
             <footer>
-                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformeMenu.aspx">
+                <asp:LinkButton ID="lbVolver" runat="server" CssClass="link-secondary" PostBackUrl="~/InformeMenu.aspx" CausesValidation="False">
                     ← Volver al Menú de Informes
                 </asp:LinkButton>
             </footer>

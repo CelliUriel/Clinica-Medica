@@ -1,70 +1,143 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\TP_INTEGRADOR_GRUPO_8\\",
+  "WorkspaceRootPath": "E:\\Clinica-Medica-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\datos\\daoturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daoturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\abmlpaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlpaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|e:\\clinica-medica-main\\tp_integrador_grupo_8\\abmlmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|e:\\tp_integrador_grupo_8\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\abmlmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\visualizarturnosmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\visualizarturnosmedico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\datos\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|e:\\tp_integrador_grupo_8\\tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|e:\\tp_integrador_grupo_8\\tp_integrador_grupo_8\\informemedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|e:\\tp_integrador_grupo_8\\negocio\\negociomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|e:\\tp_integrador_grupo_8\\tp_integrador_grupo_8\\informepacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informepacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|e:\\tp_integrador_grupo_8\\tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\tp_integrador_grupo_8\\altamedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\altamedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altamedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\TP_INTEGRADOR_GRUPO_8\\tp_integrador_grupo_8\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\inicio.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\asignaciondeturnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\asignaciondeturnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\asignaciondeturnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\Clinica-Medica-main\\datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\Clinica-Medica-main\\datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daopacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altapaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F4DC0-186F-4B9E-806A-AD4371034473}|Entidades\\Entidades.csproj|E:\\Clinica-Medica-main\\entidades\\medicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F4DC0-186F-4B9E-806A-AD4371034473}|Entidades\\Entidades.csproj|solutionrelative:entidades\\medicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\altapaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altapaciente.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\altamedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\Clinica-Medica-main\\datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\uriel celli\\AppData\\Local\\Temp\\4qajbjh4..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\Clinica-Medica-main\\datos\\daoturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daoturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|E:\\Clinica-Medica-main\\negocio\\negocioturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negocioturnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|E:\\Clinica-Medica-main\\negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|E:\\Clinica-Medica-main\\datos\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{319F7138-7DC7-4A86-8010-E9439106EC93}|Datos\\Datos.csproj|solutionrelative:datos\\daousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemedicos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informepacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informemedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemedicos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\abmlpaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\abmlpaciente.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Clinica-Medica-main\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informepacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informepacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informemenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\menuadminstrador.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\menuadminstrador.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\menuadminstrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\menuadminstrador.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\menuadminstrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\menuadminstrador.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\informemenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\informemenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|E:\\Clinica-Medica-main\\negocio\\negociomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{146FC587-53BB-47D6-B7FB-EE7A3152D01B}|Negocio\\Negocio.csproj|solutionrelative:negocio\\negociomedicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\uriel celli\\AppData\\Local\\Temp\\3ec1suse..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|E:\\Clinica-Medica-main\\tp_integrador_grupo_8\\visualizarturnosmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EFBA0BDE-A1C4-45B4-AC79-A22F0F5E6474}|TP_INTEGRADOR_GRUPO_8\\Vistas.csproj|solutionrelative:tp_integrador_grupo_8\\visualizarturnosmedico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\uriel celli\\AppData\\Local\\Temp\\53h5adab..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F4DC0-186F-4B9E-806A-AD4371034473}|Entidades\\Entidades.csproj|E:\\Clinica-Medica-main\\entidades\\turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9F4DC0-186F-4B9E-806A-AD4371034473}|Entidades\\Entidades.csproj|solutionrelative:entidades\\turnos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,214 +147,448 @@
       "DocumentGroups": [
         {
           "DockedWidth": 136,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AsignacionDeTurnos.aspx",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-05T17:26:07.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\AccesoDatos.cs",
-              "RelativeDocumentMoniker": "Datos\\AccesoDatos.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\AccesoDatos.cs",
-              "RelativeToolTip": "Datos\\AccesoDatos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:16:06.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InformeMedicos.aspx.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:02:20.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NegocioUsuario.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Negocio\\NegocioUsuario.cs",
-              "RelativeDocumentMoniker": "Negocio\\NegocioUsuario.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Negocio\\NegocioUsuario.cs",
-              "RelativeToolTip": "Negocio\\NegocioUsuario.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADgvx4AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T15:08:51.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DaoUsuarios.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoUsuarios.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoUsuarios.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoUsuarios.cs",
-              "RelativeToolTip": "Datos\\DaoUsuarios.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAIwKIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T15:08:41.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DaoPacientes.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoPacientes.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoPacientes.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoPacientes.cs",
-              "RelativeToolTip": "Datos\\DaoPacientes.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "ABMLMedico.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwFgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:13:29.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DaoTurnos.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoTurnos.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoTurnos.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoTurnos.cs*",
-              "RelativeToolTip": "Datos\\DaoTurnos.cs*",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAkwG4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:14:16.698Z",
+              "WhenOpened": "2025-12-14T22:42:57.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "NegocioMedicos.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Negocio\\NegocioMedicos.cs",
-              "RelativeDocumentMoniker": "Negocio\\NegocioMedicos.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Negocio\\NegocioMedicos.cs",
-              "RelativeToolTip": "Negocio\\NegocioMedicos.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA4wEAAAAAJAAAAAAAAAA==",
+              "Title": "DaoPacientes.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Datos\\DaoPacientes.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoPacientes.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Datos\\DaoPacientes.cs",
+              "RelativeToolTip": "Datos\\DaoPacientes.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwE4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:22:09.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InformePacientes.aspx.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:17:56.78Z",
+              "WhenOpened": "2025-12-14T22:41:13.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "InformeMedicos.aspx",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-05T17:02:17.914Z",
+              "Title": "DaoMedicos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Datos\\DaoMedicos.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoMedicos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Datos\\DaoMedicos.cs",
+              "RelativeToolTip": "Datos\\DaoMedicos.cs",
+              "ViewState": "AgIAAIkBAAAAAAAAAAAqwJgBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:01:41.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InformePacientes.aspx",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "DocumentIndex": 6,
+              "Title": "AsignacionDeTurnos.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-05T17:17:52.76Z",
+              "WhenOpened": "2025-12-14T23:20:28.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AsignacionDeTurnos.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AsignacionDeTurnos.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:20:30.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ABMLPaciente.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAYwHkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T22:36:23.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ABMLMedico.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLMedico.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-14T23:01:28.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AltaMedicos.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-14T23:44:28.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VisualizarTurnosMedico.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:04:43.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "DaoMedicos.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoMedicos.cs",
-              "RelativeDocumentMoniker": "Datos\\DaoMedicos.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\Datos\\DaoMedicos.cs",
-              "RelativeToolTip": "Datos\\DaoMedicos.cs",
-              "ViewState": "AgIAABEBAAAAAAAAAADwvysBAAARAAAAAAAAAA==",
+              "Title": "AltaPaciente.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-14T23:40:27.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Medicos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Entidades\\Medicos.cs",
+              "RelativeDocumentMoniker": "Entidades\\Medicos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Entidades\\Medicos.cs",
+              "RelativeToolTip": "Entidades\\Medicos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:10:42.664Z",
+              "WhenOpened": "2025-12-15T00:11:43.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AltaPaciente.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowC4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:42:16.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AltaMedicos.aspx.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
               "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
               "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAwwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T17:01:44.442Z",
+              "WhenOpened": "2025-12-14T23:44:31.763Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AltaPaciente.aspx",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaPaciente.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-05T17:00:17.143Z",
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Datos\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Datos\\AccesoDatos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Datos\\AccesoDatos.cs",
+              "RelativeToolTip": "Datos\\AccesoDatos.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAgAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T01:17:31.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "AltaMedicos.aspx",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\AltaMedicos.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-05T16:58:59.031Z",
+              "Title": "4qajbjh4..sql",
+              "DocumentMoniker": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\4qajbjh4..sql",
+              "ToolTip": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\4qajbjh4..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-15T12:53:48.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NegocioTurnos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Negocio\\NegocioTurnos.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioTurnos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Negocio\\NegocioTurnos.cs",
+              "RelativeToolTip": "Negocio\\NegocioTurnos.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:23:10.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Inicio.aspx.cs",
-              "DocumentMoniker": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
-              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
-              "ToolTip": "E:\\TP_INTEGRADOR_GRUPO_8\\TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
-              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\Inicio.aspx.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAA4AAAAAAAAAA==",
+              "Title": "DaoTurnos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Datos\\DaoTurnos.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoTurnos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Datos\\DaoTurnos.cs",
+              "RelativeToolTip": "Datos\\DaoTurnos.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAADwv+kAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T15:09:07.784Z",
+              "WhenOpened": "2025-12-14T23:22:48.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DaoUsuarios.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Datos\\DaoUsuarios.cs",
+              "RelativeDocumentMoniker": "Datos\\DaoUsuarios.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Datos\\DaoUsuarios.cs",
+              "RelativeToolTip": "Datos\\DaoUsuarios.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAuwLgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:51:44.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NegocioUsuario.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Negocio\\NegocioUsuario.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioUsuario.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Negocio\\NegocioUsuario.cs",
+              "RelativeToolTip": "Negocio\\NegocioUsuario.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAWwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:54:53.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InformeMedicos.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-15T03:04:22.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InformePacientes.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-15T02:02:13.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "InformeMedicos.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMedicos.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T04:02:59.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ABMLPaciente.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\ABMLPaciente.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-14T22:36:18.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SQLQuery1.sql",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\SQLQuery1.sql",
+              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "ToolTip": "E:\\Clinica-Medica-main\\SQLQuery1.sql",
+              "RelativeToolTip": "SQLQuery1.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-15T05:35:32.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "InformeMenu.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T04:23:01.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "InformePacientes.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformePacientes.aspx.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T04:23:11.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MenuAdminstrador.aspx.designer.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.designer.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.designer.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.designer.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T04:24:44.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MenuAdminstrador.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-15T02:35:30.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MenuAdminstrador.aspx.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\MenuAdminstrador.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:35:29.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InformeMenu.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\InformeMenu.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-15T02:01:33.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NegocioMedicos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Negocio\\NegocioMedicos.cs",
+              "RelativeDocumentMoniker": "Negocio\\NegocioMedicos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Negocio\\NegocioMedicos.cs",
+              "RelativeToolTip": "Negocio\\NegocioMedicos.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAkwEAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T00:11:49.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "3ec1suse..sql",
+              "DocumentMoniker": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\3ec1suse..sql",
+              "ToolTip": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\3ec1suse..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-15T03:47:33.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "VisualizarTurnosMedico.aspx",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx",
+              "RelativeDocumentMoniker": "TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx",
+              "ToolTip": "E:\\Clinica-Medica-main\\TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx",
+              "RelativeToolTip": "TP_INTEGRADOR_GRUPO_8\\VisualizarTurnosMedico.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-15T02:03:55.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "53h5adab..sql",
+              "DocumentMoniker": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\53h5adab..sql",
+              "ToolTip": "C:\\Users\\uriel celli\\AppData\\Local\\Temp\\53h5adab..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-15T01:54:27.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Turnos.cs",
+              "DocumentMoniker": "E:\\Clinica-Medica-main\\Entidades\\Turnos.cs",
+              "RelativeDocumentMoniker": "Entidades\\Turnos.cs",
+              "ToolTip": "E:\\Clinica-Medica-main\\Entidades\\Turnos.cs",
+              "RelativeToolTip": "Entidades\\Turnos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T23:30:50.609Z",
               "EditorCaption": ""
             }
           ]

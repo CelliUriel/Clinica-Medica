@@ -8,7 +8,6 @@ namespace Datos
         // Para desarrollo local: desactivar cifrado o confiar el certificado
         private const string CadenaConexion = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ClinicaMedica;Integrated Security=True;Encrypt=False;TrustServerCertificate=True";
 
-
         public SqlConnection ObtenerConexion()
         {
             try

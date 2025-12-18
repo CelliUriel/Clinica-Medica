@@ -18,12 +18,8 @@ namespace TP_INTEGRADOR_GRUPO_8
 
             if (!IsPostBack)
             {
-
-                //negocio.CompletarDdlLocalidades(ddlLocalidades);
                 negocio.CompletarDdlProvincias(ddlProvincias);
                 negocio.CompletarDdlSexo(ddlSexo);
-
-
             }
         }
 
@@ -44,9 +40,14 @@ namespace TP_INTEGRADOR_GRUPO_8
             pacientes.SetTelefono_Paciente(tbxTelefono.Text);
             pacientes.SetEstado_Paciente(true);
 
-
-
-            NegocioPacientes negocio=new NegocioPacientes();
+            if (negocio.ExisteDniPaciente(tbxDNI.Text))
+            {
+                lblMensaje.Text = "Error al guardar el paciente, el DNI no se puede repetir";
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+                LimpiarCampos();
+                return;
+                
+            }
 
             bool exito=negocio.GuardarPacientes(pacientes);
 
@@ -55,8 +56,10 @@ namespace TP_INTEGRADOR_GRUPO_8
 
                 lblMensaje.Text = "Paciente guardado correctamente";
                 lblMensaje.ForeColor = System.Drawing.Color.Green;
+                LimpiarCampos();
 
-            } else
+            }
+            else
             {
                 lblMensaje.Text = "Error al guardar el Paciente";
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
@@ -64,11 +67,30 @@ namespace TP_INTEGRADOR_GRUPO_8
 
         }
 
+        protected void LimpiarCampos()
+        {
+            tbxDNI.Text = string.Empty;
+            tbxNombre.Text = string.Empty;
+            tbxApellido.Text = string.Empty;
+            ddlSexo.SelectedIndex = 0;
+            tbxNacionalidad.Text = string.Empty;
+            tbxFechaNacimiento.Text = string.Empty;
+            tbxDireccion.Text = string.Empty;
+            ddlLocalidades.SelectedIndex = 0;
+            ddlProvincias.SelectedIndex = 0;
+            tbxCorreo.Text = string.Empty;
+            tbxTelefono.Text = string.Empty;
+        }
         protected void ddlProvincias_SelectedIndexChanged(object sender, EventArgs e)
         {
             int idProvincia = int.Parse(ddlProvincias.SelectedValue);
             NegocioPacientes negocio = new NegocioPacientes();
             negocio.CompletarDdlLocalidades(ddlLocalidades, idProvincia);
+        }
+
+        protected void tbxFechaNacimiento_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

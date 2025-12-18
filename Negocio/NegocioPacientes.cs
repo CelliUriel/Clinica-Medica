@@ -27,7 +27,7 @@ namespace Negocio
 
         public void CompletarDdlLocalidades(DropDownList ddlLocalidad, int idProvincia)
         {
-           dao.CompletarDdlLocalidades(ddlLocalidad, idProvincia);
+            dao.CompletarDdlLocalidades(ddlLocalidad, idProvincia);
         }
 
 
@@ -36,8 +36,9 @@ namespace Negocio
             dao.CompletarDdlSexo(ddlSexo);
         }
 
-        public bool GuardarPacientes(Pacientes pacientes){
-           return dao.InsertarPacientes(pacientes);
+        public bool GuardarPacientes(Pacientes pacientes)
+        {
+            return dao.InsertarPacientes(pacientes);
 
         }
 
@@ -45,5 +46,25 @@ namespace Negocio
         {
             dao.CompletarDdlPacientes(ddlPacientes);
         }
+
+        public bool EliminarPaciente(Pacientes paciente)
+        {
+            return dao.EliminarPaciente(paciente);
+        }
+        public int Alta(string dni)
+        {
+            return dao.AltaLogica(dni);
+        }
+
+        public bool Actualizar(Pacientes p)
+        {
+            return dao.ActualizarPaciente(p);
+        }
+
+        public bool ExisteDniPaciente(string dni)
+        {
+            return dao.ExisteDni(dni);
+        }
     }
+
 }

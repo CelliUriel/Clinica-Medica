@@ -4,7 +4,7 @@ namespace Entidades
 {
     public class Turnos
     {
-        private string ID_Turno;
+        private int ID_Turno;
         private string DNI_Paciente_Turno;
         private string Id_Medico_Turno;
         private string Codigo_Especialidad_Turno;
@@ -15,12 +15,12 @@ namespace Entidades
 
         public Turnos() { }
 
-        public string GetID_Turno()
+        public int GetID_Turno()
         {
             return ID_Turno;
         }
 
-        public void SetID_Turno(string IdT)
+        public void SetID_Turno(int IdT)
         {
             ID_Turno = IdT;
         }

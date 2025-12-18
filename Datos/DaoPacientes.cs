@@ -12,46 +12,21 @@ namespace Datos
         static readonly AccesoDatos ds = new AccesoDatos();
         SqlParameter SqlParametros = new SqlParameter();
         readonly SqlConnection conexion = ds.ObtenerConexion();
+        BaseDao BaseDao = new BaseDao();
 
         public void CompletarDdlProvincias(DropDownList ddlProvincia)
         {
-            ddlProvincia.Items.Clear();
-            ddlProvincia.Items.Add(new ListItem("---Seleccionar---", "0"));
-
-            DataTable tabla = new AccesoDatos().CompletarDdl("SELECT * FROM Provincias ORDER BY Descripcion_Provincia");
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                ddlProvincia.Items.Add(new ListItem(fila["Descripcion_Provincia"].ToString(), fila["ID_Provincia"].ToString()));
-            }
+            BaseDao.CompletarDdlProvincias(ddlProvincia);
         }
 
         public void CompletarDdlLocalidades(DropDownList ddlLocalidad, int idProvincia)
         {
-            ddlLocalidad.Items.Clear();
-            ddlLocalidad.Items.Add(new ListItem("---Seleccionar---", "0"));
-
-            if (idProvincia == 0) return;
-
-            DataTable tabla = new AccesoDatos().CompletarDdl(
-                $"SELECT * FROM Localidades WHERE ID_Provincia_Localidad = {idProvincia} ORDER BY Descripcion_Localidad"
-            );
-
-            foreach (DataRow fila in tabla.Rows)
-            {
-                ddlLocalidad.Items.Add(
-                    new ListItem(fila["Descripcion_Localidad"].ToString(), fila["ID_Localidad"].ToString())
-                );
-            }
+            BaseDao.CompletarDdlLocalidades(ddlLocalidad, idProvincia);
         }
 
         public void CompletarDdlSexo(DropDownList ddlSexo)
         {
-            ddlSexo.Items.Clear();
-            ddlSexo.Items.Add(new ListItem("--- Seleccionar ---", "0"));
-            ddlSexo.Items.Add(new ListItem("Masculino", "Masculino"));
-            ddlSexo.Items.Add(new ListItem("Femenino", "Femenino"));
-            ddlSexo.Items.Add(new ListItem("Otro", "Otro"));
+            BaseDao.CompletarDdlSexo(ddlSexo);
         }
 
 
@@ -70,27 +45,30 @@ namespace Datos
 
         public DataTable ListarPacientes()
         {
-            string consultaSQL = "SELECT " +
-                "P.DNI_Paciente AS DNI," +
-                "P.Nombre_Paciente AS Nombre, " +
-                "P.Apellido_Paciente AS Apellido, " +
-                "P.Sexo_Paciente AS Sexo, " +
-                "P.Nacionalidad_Paciente AS Nacionalidad, " +
-                "P.FechaNacimiento_Paciente AS Fecha, " +
-                "P.Direccion_Paciente AS Direccion, " +
-                "P.ID_Localidad_Paciente AS Localidad, " +
-                "P.ID_Provincia_Paciente AS Provincia, " +
-                "P.Correo_Paciente AS Correo, " +
-                "P.Telefono_Paciente AS Telefono," +
-                "P.Estado_Paciente AS Estado " +
-                 "FROM Pacientes P";
-
-
-
+            string consultaSQL =
+                      "SELECT " +
+                      "P.DNI_Paciente AS DNI, " +
+                      "P.Nombre_Paciente AS Nombre, " +
+                      "P.Apellido_Paciente AS Apellido, " +
+                      "P.Sexo_Paciente AS Sexo, " +
+                      "P.Nacionalidad_Paciente AS Nacionalidad, " +
+                      "CONVERT(VARCHAR(10), P.FechaNacimiento_Paciente, 103) AS FechaNacimiento, " +
+                      "P.Direccion_Paciente AS Direccion, " +
+                      "L.ID_Localidad AS ID_Localidad, " +
+                      "L.Descripcion_Localidad AS Localidad, " +
+                      "PR.ID_Provincia AS ID_Provincia, " +
+                      "PR.Descripcion_Provincia AS Provincia, " +
+                      "P.Correo_Paciente AS Correo, " +
+                      "P.Telefono_Paciente AS Telefono, " +
+                      "P.Estado_Paciente AS Estado " +
+                      "FROM Pacientes P " +
+                      "JOIN Localidades L ON P.ID_Localidad_Paciente = L.ID_Localidad " +
+                      "JOIN Provincias PR ON P.ID_Provincia_Paciente = PR.ID_Provincia " +
+                      "WHERE P.Estado_Paciente = 1";
 
             return ds.ObtenerTabla(consultaSQL);
-
         }
+
         public DataTable FiltrarPacientesPorDNI(string dni)
         {
             string consultaSQL = "SELECT " +
@@ -99,15 +77,15 @@ namespace Datos
                 "P.Apellido_Paciente AS Apellido, " +
                 "P.Sexo_Paciente AS Sexo, " +
                 "P.Nacionalidad_Paciente AS Nacionalidad, " +
-                "P.FechaNacimiento_Paciente AS Fecha, " +
+                "P.FechaNacimiento_Paciente AS FechaNacimiento, " +
                 "P.Direccion_Paciente AS Direccion, " +
                 "P.ID_Localidad_Paciente AS Localidad, " +
                 "P.ID_Provincia_Paciente AS Provincia, " +
                 "P.Correo_Paciente AS Correo, " +
                 "P.Telefono_Paciente AS Telefono," +
                 "P.Estado_Paciente AS Estado " +
-                 "FROM Pacientes P" +
-                 $" WHERE P.DNI_Paciente={dni}";
+                 "FROM Pacientes P " +
+                 $"WHERE RTRIM(P.DNI_Paciente) LIKE '%{dni}%'";
 
 
 
@@ -123,26 +101,20 @@ namespace Datos
 
 
 
-        public bool EliminarPaciente(Pacientes pacientes)
+        public bool EliminarPaciente(Pacientes paciente)
         {
-            AccesoDatos accesoDatos = new AccesoDatos();
-
-            SqlCommand sqlCommand = new SqlCommand();
-
-            ArmarParametrosEliminarPaciente(ref sqlCommand, pacientes);
-
-            int FilasInsertadas = accesoDatos.EjecutarComando("UPDATE Pacientes SET Estado_Pacientes = 0 WHERE DNI_Paciente = @DNIPaciente");
-            if (FilasInsertadas == 1)
+            using (SqlConnection cn = ds.ObtenerConexion())
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                cn.Open();
+                string consulta = "UPDATE Pacientes SET Estado_Paciente = 0 WHERE DNI_Paciente = @DNIPaciente";
+                using (SqlCommand cmd = new SqlCommand(consulta, cn))
+                {
+                    cmd.Parameters.AddWithValue("@DNIPaciente", paciente.Dni_Paciente);
+                    int filas = cmd.ExecuteNonQuery();
+                    return filas > 0;
+                }
             }
         }
-
-
 
         public bool InsertarPacientes(Pacientes pacientes)
         {
@@ -186,7 +158,7 @@ namespace Datos
             }
             catch (Exception ex)
             {
-                throw new Exception("Error al insertar el médico: " + ex.Message);
+               return false;
             }
         }
 
@@ -198,9 +170,93 @@ namespace Datos
             daoPacientes.InsertarPacientes(pacientes);
         }
 
+        public int AltaLogica(string dni)
+        {
+            using (SqlConnection conn = ds.ObtenerConexion())
+            {
+                conn.Open();
 
+                string query = "UPDATE Pacientes SET Estado_Paciente=@Estado WHERE DNI_Paciente=@dni AND Estado_Paciente=0";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Estado", 1);
+                cmd.Parameters.AddWithValue("@dni", dni);
+                int filas = cmd.ExecuteNonQuery();
+                conn.Close();
+                return filas;
 
+            }
+        }
 
+        public bool ActualizarPaciente(Pacientes p)
+        {
+            try
+            {
+                using (SqlConnection cn = ds.ObtenerConexion())
+                {
 
+                    string sql = @"UPDATE Pacientes SET 
+                            Nombre_Paciente = @Nombre,
+                            Apellido_Paciente = @Apellido,
+                            Sexo_Paciente = @Sexo,
+                            Nacionalidad_Paciente = @Nacionalidad,
+                            ID_Provincia_Paciente = @IdProvincia,
+                            ID_Localidad_Paciente = @IdLocalidad,
+                            Direccion_Paciente = @Direccion,
+                            Correo_Paciente = @Correo,
+                            Telefono_Paciente = @Telefono,
+                            Estado_Paciente = @Estado
+                           WHERE DNI_Paciente = @DNI";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        cmd.Parameters.AddWithValue("@DNI", p.GetDni_Paciente());
+                        cmd.Parameters.AddWithValue("@Nombre", p.GetNombre_Paciente());
+                        cmd.Parameters.AddWithValue("@Apellido", p.GetApellido_Paciente());
+                        cmd.Parameters.AddWithValue("@Sexo", p.GetSexo_Paciente());
+                       // cmd.Parameters.AddWithValue("@FechaNacimiento", p.GetFecha_Nacimiento_Paciente());
+                        cmd.Parameters.AddWithValue("@Nacionalidad", p.GetNacionalidad_Paciente());
+                        cmd.Parameters.AddWithValue("@IdProvincia", p.GetIdProvincia_Paciente());
+                        cmd.Parameters.AddWithValue("@IdLocalidad", p.GetIdLocalidad_Paciente());
+                        cmd.Parameters.AddWithValue("@Direccion", p.GetDireccion_Paciente());
+                        cmd.Parameters.AddWithValue("@Correo", p.GetCorreo_Paciente());
+                        cmd.Parameters.AddWithValue("@Telefono", p.GetTelefono_Paciente());
+
+                        // Bit (bool) → entero
+                        cmd.Parameters.AddWithValue("@Estado", p.GetEstado_Paciente() ? 1 : 0);
+
+                        cn.Open();
+                        int filas = cmd.ExecuteNonQuery();
+
+                        return filas > 0;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                string msg = "Error SQL en ActualizarPaciente: " + ex.Message;
+                throw new Exception(msg, ex);
+            }
+            catch (Exception ex)
+            {
+                string msg = "Error en ActualizarPaciente: " + ex.Message;
+                throw new Exception(msg, ex);
+            }
+        }
+
+        public bool ExisteDni(string dni)
+        {
+            using (SqlConnection cn = ds.ObtenerConexion())
+            {
+                cn.Open();
+
+                string query = "SELECT COUNT(*) FROM Pacientes WHERE DNI_Paciente = @dni";
+                using (SqlCommand cmd = new SqlCommand(query, cn))
+                {
+                    cmd.Parameters.AddWithValue("@dni", dni);
+                    int cantidad = (int)cmd.ExecuteScalar();
+                    return cantidad > 0;
+                }
+            }
+        }
     }
 }

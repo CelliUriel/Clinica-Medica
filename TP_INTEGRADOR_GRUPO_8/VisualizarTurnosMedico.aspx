@@ -66,9 +66,7 @@
             <div class="titulo">Listado de Turnos del Médico</div>
 
             <asp:Label ID="lblNombreMedico" runat="server" 
-                       Text="Nombre Médico" 
-                       Style="display:block;text-align:center;font-size:18px;margin-bottom:20px;">
-            </asp:Label>
+                       Style="display:block;text-align:center;font-size:18px;margin-bottom:20px;"></asp:Label>
 
             <!-- Filtros -->
             <div class="filtro-box">
@@ -80,14 +78,16 @@
                     <asp:ListItem Text="Todos" Value="Todos" />
                     <asp:ListItem Text="Presente" Value="Presente" />
                     <asp:ListItem Text="Ausente" Value="Ausente" />
+                    <asp:ListItem>Pendiente</asp:ListItem>
                 </asp:DropDownList>
 
                 &nbsp;
-                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" style="height: 26px" />
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
             </div>
 
             <!-- GRID -->
-            <asp:GridView ID="gvTurnos" runat="server" AutoGenerateColumns="False" CssClass="grid">
+            <asp:GridView ID="gvTurnos" runat="server" AutoGenerateColumns="False" CssClass="grid"  DataKeyNames="ID_Turno" AutoGenerateEditButton="True" OnRowCancelingEdit="gvTurnos_RowCancelingEdit" OnRowEditing="gvTurnos_RowEditing" OnRowUpdating="gvTurnos_RowUpdating" OnRowDataBound="gvTurnos_RowDataBound">
                 <Columns>
                     <asp:TemplateField HeaderText="Fecha">
                         <ItemTemplate>
@@ -105,26 +105,27 @@
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Estado">
+                        <EditItemTemplate>
+                            <asp:DropDownList ID="ddlEstado" runat="server">
+                            </asp:DropDownList>
+                        </EditItemTemplate>
                         <ItemTemplate>
                             <asp:Label ID="it_listadoEstado" runat="server" Text='<%# Bind("Estado") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Observaciones">
+                        <EditItemTemplate>
+                            <asp:TextBox ID="tb_eit_observaciones" runat="server" Text='<%# Bind("Observaciones") %>'></asp:TextBox>
+                        </EditItemTemplate>
                         <ItemTemplate>
                             <asp:Label ID="it_listadoObservaciones" runat="server" Text='<%# Bind("Observaciones") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
 
-                    <asp:TemplateField HeaderText="Acciones">
-                        <ItemTemplate>
-                            <asp:Button ID="btnEditar" runat="server" Text="Editar"
-                                CommandName="EditarTurno" CommandArgument= '0' />
-                        </ItemTemplate>
-                    </asp:TemplateField>
                 </Columns>
             </asp:GridView>
 
-            <asp:Button ID="btnVolver" runat="server" Text="← Volver al Menú" CssClass="btnVolver"/>
+            <asp:Button ID="btnVolver" runat="server" Text="← Volver al Menú" CssClass="btnVolver" PostBackUrl="~/PanelMedico.aspx"/>
 
         </div>
     </form>

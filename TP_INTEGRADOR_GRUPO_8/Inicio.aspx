@@ -122,12 +122,18 @@
             <div class="input-group">
                 <label for="<%= tbNombreDeUsuario.ClientID %>">Nombre de usuario</label>
                 <asp:TextBox ID="tbNombreDeUsuario" runat="server" CssClass="text-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tbNombreDeUsuario" ErrorMessage="RequiredFieldValidator" ForeColor="#3366CC" ValidateRequestMode="Enabled">Campo obligatorio.</asp:RequiredFieldValidator>
+&nbsp;&nbsp;
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tbNombreDeUsuario" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^\S+$">Ingrese sin espacios</asp:RegularExpressionValidator>
             </div>
 
             <div class="input-group">
-                <label for="<%= tbContraseniaDeUsuario.ClientID %>">Contraseña</label>
-                <asp:TextBox ID="tbContraseniaDeUsuario" runat="server" CssClass="text-control" TextMode="Password"></asp:TextBox>
+                <label for="<%= tbContraseniaDeUsuario.ClientID %>">Contraseña&nbsp; </label>&nbsp;<asp:TextBox ID="tbContraseniaDeUsuario" runat="server" CssClass="text-control" TextMode="Password"></asp:TextBox>
                 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            &nbsp;&nbsp;&nbsp;
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tbContraseniaDeUsuario" ErrorMessage="RequiredFieldValidator" ForeColor="#3366CC" ValidateRequestMode="Enabled">Campo obligatorio.</asp:RequiredFieldValidator>
+&nbsp;&nbsp;
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tbContraseniaDeUsuario" ErrorMessage="RegularExpressionValidator" ForeColor="#3366CC" ValidationExpression="^\S+$">Ingrese sin espacios</asp:RegularExpressionValidator>
             </div>
 
             <asp:Button ID="btnIniciarSesion" runat="server" Text="Iniciar Sesión" CssClass="btn-action-primary" OnClick="BtnIniciarSesion_Click" />

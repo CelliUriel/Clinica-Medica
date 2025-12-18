@@ -24,6 +24,15 @@ namespace TP_INTEGRADOR_GRUPO_8
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control LblNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblNombre;
+
+        /// <summary>
         /// Control tbxFechaDesde.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,24 @@ namespace TP_INTEGRADOR_GRUPO_8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxFechaDesde;
+
+        /// <summary>
+        /// Control RfvFechaDesdeInformePacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RfvFechaDesdeInformePacientes;
+
+        /// <summary>
+        /// Control RevFechaDesdeInformePacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RevFechaDesdeInformePacientes;
 
         /// <summary>
         /// Control tbxFechaHasta.
@@ -42,6 +69,24 @@ namespace TP_INTEGRADOR_GRUPO_8
         protected global::System.Web.UI.WebControls.TextBox tbxFechaHasta;
 
         /// <summary>
+        /// Control RfvFechaHastaInformePacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RfvFechaHastaInformePacientes;
+
+        /// <summary>
+        /// Control RevFechaHastaInformePacientes.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RevFechaHastaInformePacientes;
+
+        /// <summary>
         /// Control btnGenerarInforme.
         /// </summary>
         /// <remarks>
@@ -49,6 +94,15 @@ namespace TP_INTEGRADOR_GRUPO_8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGenerarInforme;
+
+        /// <summary>
+        /// Control CompareValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// Control pnlResumen.

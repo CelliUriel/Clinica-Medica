@@ -182,18 +182,22 @@ namespace Datos
             {
                 using (SqlConnection conn = ds.ObtenerConexion())
                 {
-                    conn.Open(); // importante abrir la conexión
+                    conn.Open(); 
                     string query = "SELECT COUNT(*) FROM Usuarios WHERE Nombre_Usuario = @usuario";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@usuario", usuario);
                     int count = (int)cmd.ExecuteScalar();
-                    return count > 0;
+                    bool existe = count > 0;
+                    return existe;
                 }
             }
             catch
             {
                 return false;
             }
+
+                       
+            
         }
 
         public bool ContraseniaCorrectaLogin(string usuario, string pass)

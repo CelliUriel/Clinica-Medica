@@ -31,8 +31,7 @@
             /* animation removed */
         }
 
-        /* Removed fadeIn animation */
-        /* Removed @keyframes fadeIn */
+       
 
         h1 {
             color: #0d6efd;

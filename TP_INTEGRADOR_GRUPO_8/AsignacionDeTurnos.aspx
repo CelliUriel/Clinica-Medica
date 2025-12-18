@@ -26,25 +26,26 @@
                     <asp:DropDownList ID="ddlEspecialidad" runat="server" CssClass="select-control" OnSelectedIndexChanged="DdlEspecialidad_SelectedIndexChanged" AutoPostBack="True">
                         <asp:ListItem Value="">-- Seleccionar Especialidad --</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlEspecialidad" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlEspecialidad" ForeColor="#3366CC" InitialValue="0">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
 
                 <div class="input-module">
                     <label class="input-label" for="<%= ddlMedicos.ClientID %>">Médico:</label>
-                    <asp:DropDownList ID="ddlMedicos" runat="server" AutoPostBack="true" CssClass="select-control">
+                    <asp:DropDownList ID="ddlMedicos" runat="server" AutoPostBack="true" CssClass="select-control" OnSelectedIndexChanged="ddlMedicos_SelectedIndexChanged">
                         <asp:ListItem Value="">-- Seleccionar Medico --</asp:ListItem>
                     </asp:DropDownList>
                     <br/>
-                    <asp:RequiredFieldValidator ID="rfvMedicosDDL" runat="server" ControlToValidate="ddlMedicos" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvMedicosDDL" runat="server" ControlToValidate="ddlMedicos" ForeColor="#3366CC" InitialValue="0">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:Label ID="lblDYH" runat="server" ForeColor="#3366CC"></asp:Label>
                 </div>
 
 
                 <div class="input-module patient-selector">
                     <label class="input-label" for="<%= ddlPaciente.ClientID %>">Paciente:</label>
-                    <asp:DropDownList ID="ddlPaciente" runat="server" CssClass="select-control">
+                    <asp:DropDownList ID="ddlPaciente" runat="server" CssClass="select-control" OnSelectedIndexChanged="ddlPaciente_SelectedIndexChanged">
                         <asp:ListItem Value="">-- Seleccionar Paciente --</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlPaciente" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlPaciente" ForeColor="#3366CC" InitialValue="0">Se necesita completar este campo.</asp:RequiredFieldValidator>
                 </div>
 
                 <hr class="divider" />
@@ -62,7 +63,7 @@
                             <asp:DropDownList ID="ddlHora" runat="server" CssClass="select-control">
                                 <asp:ListItem Value="">-- Hora --</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlHora" ForeColor="#3366CC">Se necesita completar este campo.</asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlHora" ForeColor="#3366CC" InitialValue="0">Se necesita completar este campo.</asp:RequiredFieldValidator>
 &nbsp;
                         </div>
                     </div>

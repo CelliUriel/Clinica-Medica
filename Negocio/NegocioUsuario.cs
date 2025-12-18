@@ -28,8 +28,14 @@ namespace Negocio
             return daoUsuario.InsertarUsuarioYDevolverID(usuario);
         }
 
-        public int ValidarLogin(string usuario, string pass)
+        public bool usuarioExistente(string usuario)
         {
+            return (daoUsuario.ExisteUsuario(usuario));
+             
+        }
+
+        public int ValidarLogin(string usuario, string pass)
+        {  
             if (!daoUsuario.ExisteUsuario(usuario))
                 return 0; // Usuario inexistente
 
